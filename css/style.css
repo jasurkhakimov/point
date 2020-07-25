@@ -76,6 +76,10 @@
     display: flex;
 }
 
+.d-none {
+    display: none;
+}
+
 .i-center {
     align-items: center;
 }
@@ -98,6 +102,13 @@ a {
 }
 
 /* Navbar */
+
+/* .decor-left-1 {
+    background-image: url(../img/Website-background/Left-decor.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position-y: top;
+} */
 
 .main-navbar {
     background-color: #0F0F0F;
@@ -138,6 +149,7 @@ a {
 }
 
 .search {
+    font-size: 15px;
     font-family: Montserrat;
     width: 360px;
     height: 50px;
@@ -166,10 +178,16 @@ a {
     height: 50px;
     width: 90px;
     color: var(--white);
-    background-color: var(--red);
+    background: var(--red);
     border-radius: 5px;
     font-size: 15px;
     line-height: 18px;
+    transition: all .5s;
+}
+
+.search-button:hover {
+    background: radial-gradient(57.7% 100% at 50% 0%, #FF6B70 0%, #E30C13 100%);
+    box-shadow: inset 0px -2px 0px rgba(0, 0, 0, 0.25);
 }
 
 /* Navbar / Number */
@@ -180,8 +198,7 @@ a {
 }
 
 .phone-logo-wrapper {
-    display: flex;
-    align-items: center;
+    margin-top: 15px;
 }
 
 .phone-texts {
@@ -216,26 +233,31 @@ a {
 
 /* Navbar / Language */
 
-.language-wrapper {
+.language-switcher {
+    position: relative;
+}
+
+.languages-wrapper {
     margin-left: 45px;
     margin-top: 4px;
 }
 
-.selected-language {
-    display: flex;
-    background: #2C2C2C;
-    border-radius: 5px;
-}
-
 .language {
-    visibility: hidden;
+    cursor: pointer;
+    display: none;
     background-color: #2C2C2C;
     border-radius: 5px;
-    padding: 11px 13.23px 12px 10px; 
+    width: 87px;
+    height: 35px;
+    padding: 11px 13.23px 11px 10px; 
 }
 
-.language.active {
-    visibility: visible;
+.language-russian.active, .language-english.active, .language-uzbek.active {
+    display: block;
+}
+
+.flag {
+    width: 20px;
 }
 
 .language-text {
@@ -247,8 +269,64 @@ a {
 }
 
 .drop-button-wrapper {
-    display: flex;
-    align-items: center;
+    display: inline;
+}
+
+/* Navbar / Language list */
+
+.language-list {
+    display: none;
+    position: absolute;
+    left: 45px;
+    bottom: -95px;
+}
+
+.language-list.active {
+    display: block;
+}
+
+.relative {
+    position: relative;
+}
+
+.language-list-item {
+    cursor: pointer;
+    background-color: #2C2C2C;
+    width: 87px;
+    height: 35px;
+    transition: background .1s ease-in-out;
+}
+
+.language-list-item:hover {
+    background-color: #1C1C1C;
+}
+
+.language-item-border-radius-top {
+    border-radius: 5px 5px 0 0;
+}
+
+.language-item-border-radius-bottom {
+    border-radius: 0 0 5px 5px;
+}
+
+.language-list-item:nth-child(1) {
+    padding: 11px 13.23px 5.5px 10px;
+}
+
+.language-list-item:nth-child(2) {
+    padding: 5.5px 13.23px 5.5px 10px;
+}
+
+.language-list-item:nth-child(3) {
+    padding: 5.5px 13.23px 11px 10px;
+}
+
+.language-list-russian.active, .language-list-english.active, .language-list-uzbek.active {
+    background: #1C1C1C;
+}
+
+.mt-2 {
+    margin-top: 2px;
 }
 
 /* Navbar / Back place */
@@ -351,6 +429,65 @@ a {
     border-radius: 5px;
 }
 
+/* Secondary Navbar / Dropdown */
+
+.nav-drop-panel {
+    position: absolute;
+    top: 190px;
+    z-index: 3;
+    margin: 0 auto;
+    width: 1170px;
+    height: 62px;
+}
+
+.nav-drop-panel-content {
+    display: flex;
+}
+
+.nav-drop-panel-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    width: 155px;
+    height: 62px;
+    background: var(--white);
+    border: 1px solid #EBEBEB;
+    border-radius: 0px;
+}
+
+.nav-drop-panel-border-radius-start {
+    border-radius: 0px 0px 0px 10px;
+}
+
+.nav-drop-panel-border-radius-end {
+    border-radius: 0px 0px 10px 0px;
+}
+
+.nav-carousel-arrow-place {
+    z-index: 3;
+    border-top: 1px solid #EBEBEB;
+    width: 84px;
+    height: 62px;
+    background: var(--white);
+}
+
+.nav-phones-drop, .nav-laptops-drop, .nav-tablets-drop {
+    display: none;
+}
+
+.sn-phone-item:hover ~ .nav-phones-drop, .nav-phones-drop:hover {
+    display: block;
+}
+
+.sn-laptop-item:hover ~ .nav-laptops-drop, .nav-laptops-drop:hover {
+    display: block;
+}
+
+.sn-tablet-item:hover ~ .nav-tablets-drop, .nav-tablets-drop:hover {
+    display: block;
+}
+
 /* Carousel */
 
 .carousel {
@@ -423,6 +560,7 @@ a {
 }
 
 .novetly-card, .avengers-slider-item {
+    cursor: pointer;
     background: #292929;
     border-radius: 10px;
     padding: 10px 10px 19px 10px;
@@ -550,7 +688,6 @@ a {
 .novetly-availability-bag-wrapper {
     background: var(--red);
     border-radius: 0px 5px 5px 0px;
-    padding: 15px;
     transition: all .5s;
 }
 
@@ -561,6 +698,14 @@ a {
 
 .novetly-availability-bag, .novetly-availability-check-mark {
     display: none;
+}
+
+.novetly-availability-bag {
+    padding: 15px;
+}
+
+.novetly-availability-check-mark {
+    padding: 18px 14px 18px 18px;
 }
 
 .novetly-availability-bag.active, .novetly-availability-check-mark.active {
@@ -611,6 +756,41 @@ a {
     background-position-x: 47%;
 }
 
+.avengers-slider-item {
+    position: relative;
+    width: 270px;
+    height: 355px;
+}
+
+.hover-appear {
+    display: none;
+}
+
+.avenger-slider-item-details {
+    background: #292929;
+}
+
+.avengers-slider-item:hover .hover-appear {
+    display: block;
+}
+
+.avengers-slider-item:hover .avenger-slider-item-details {
+    height: 197px;
+    width: 250px;
+    position: absolute;
+    bottom: 0;
+    right: 10px;
+    z-index: 3;
+}
+
+.avengers-slider-item:hover .avengers-item-texts {
+    margin-top: 16px;
+}
+
+.mt-17 {
+    margin-top: 17px;
+}
+
 .avengers-headings-wrapper {
     padding: 183px 0 0 0;
 }
@@ -636,6 +816,11 @@ a {
 .link:hover {
     background: radial-gradient(57.7% 100% at 50% 0%, #FF6B70 0%, #E30C13 100%);
     box-shadow: inset 0px -2px 0px rgba(0, 0, 0, 0.25);
+}
+
+.avengers-slider-image {
+    position: relative;
+    z-index: 1;
 }
 
 .avengers-availability, avengers-availability-comfirm-wrapper {
@@ -672,6 +857,15 @@ a {
 .popular-content {
     margin-top: 39px;
     display: flex;
+}
+
+/* Background Decor */
+
+.common-div-for-background-decor {
+    background-image: url(../img/Website-background/3d-effect.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center 563px;
 }
 
 /* More info */
@@ -796,11 +990,11 @@ a {
     margin-top: 180px;
     width: 100%;
     height: 469px;
-    background: linear-gradient(164.5deg, #1C1C1C 45.63%, rgba(29, 29, 29, 0) 67.7%);
+    background: linear-gradient(164.5deg, #1C1C1C 45.63%, rgba(29, 29, 29, 0) 67.7%), #151515;
     background-image: url(../img/Website-background/Wave.png);
     background-repeat: no-repeat;
     background-size: contain;
-    background-position: center bottom;
+    background-position: center top;
 }
 
 .footer-content {
