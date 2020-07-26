@@ -1636,3 +1636,25 @@ a {
 .mt-227 {
     margin-top: 227px;
 }
+
+/* Gurantee-Support.html */
+
+.gurantee-support {
+    margin-top: 47px;
+}
+
+.gurantee-support-heading {
+    font-size: 15px;
+    line-height: 150%;
+    color: #FFFFFF;
+}
+
+.gurantee-support-text {
+    font-size: 15px;
+    line-height: 150%;
+    color: #4B4B4B;
+}
+
+.gurantee-support-contacts-and-form {
+    margin-top: 86px;
+}
