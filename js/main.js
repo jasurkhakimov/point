@@ -59,5 +59,57 @@ $(document).ready(function(){
         }
     }
 
+    // Smartphones Selector
+
+    $(".phone-cards-selector-item").click(function () {
+        $(".phone-cards-selector-back").toggleClass("active");
+    });
+
+    $(".phone-cards-selector-list-size").click(function () {
+        $(".phone-cards-selector-back").removeClass("active");
+        $(".phone-cards-selector-item-default, .phone-cards-selector-item-name, .phone-cards-selector-item-price").removeClass("active");
+        $(".phone-cards-selector-list-name, .phone-cards-selector-list-price").removeClass("active");
+        $(".phone-cards-selector-item-size").addClass("active");
+        $(".phone-cards-selector-list-size").addClass("active");
+    });
+
+    $(".phone-cards-selector-list-name").click(function () {
+        $(".phone-cards-selector-back").removeClass("active");
+        $(".phone-cards-selector-item-default, .phone-cards-selector-item-size, .phone-cards-selector-item-price").removeClass("active");
+        $(".phone-cards-selector-list-size, .phone-cards-selector-list-price").removeClass("active");
+        $(".phone-cards-selector-item-name").addClass("active");
+        $(".phone-cards-selector-list-name").addClass("active");
+    });
+
+    $(".phone-cards-selector-list-price").click(function () {
+        $(".phone-cards-selector-back").removeClass("active");
+        $(".phone-cards-selector-item-default, .phone-cards-selector-item-size, .phone-cards-selector-item-name").removeClass("active");
+        $(".phone-cards-selector-list-size, .phone-cards-selector-list-name").removeClass("active");
+        $(".phone-cards-selector-item-price").addClass("active");
+        $(".phone-cards-selector-list-price").addClass("active");
+    });
+
+    // Smartphones Filter
+
+    $(".smartphones-filter-item").click(function name(params) {
+        $(this).children("div").children(".smartphones-filter-item-arrow").toggleClass("active");
+    });
+
+    $(".smartphones-item-producer").click(function () {
+        $(".smartphones-filter-dropdown-producer").toggleClass("active");
+    });
+    $(".smartphones-filter-dropdown-producer-image-item").click(function () {
+        $(".smartphones-filter-dropdown-producer-image-item").removeClass("active");
+        $(this).addClass("active");
+    });
+
+    $(".smartphones-item-model").click(function () {
+        $(".smartphones-filter-dropdown-model-content").toggleClass("active");
+    })
+
+    $(".smartphones-item-price").click(function () {
+        $(".smartphones-filter-dropdown-price").toggleClass("active");
+    })
+
 
   });

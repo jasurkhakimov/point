@@ -182,12 +182,31 @@ a {
     border-radius: 5px;
     font-size: 15px;
     line-height: 18px;
-    transition: all .5s;
 }
 
-.search-button:hover {
+.z-2 {
+    position: relative;
+    z-index: 2;
+}
+
+.search-button:before {
+    content: "";
+    opacity: 0;
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
     background: radial-gradient(57.7% 100% at 50% 0%, #FF6B70 0%, #E30C13 100%);
     box-shadow: inset 0px -2px 0px rgba(0, 0, 0, 0.25);
+    transition: all .2s ease-in-out;
+}
+
+.search-button:hover:before {
+    opacity: 1;
+    z-index: 1;
 }
 
 /* Navbar / Number */
@@ -310,15 +329,15 @@ a {
 }
 
 .language-list-item:nth-child(1) {
-    padding: 11px 13.23px 5.5px 10px;
+    padding: 11px 13.23px 11px 10px;
 }
 
 .language-list-item:nth-child(2) {
-    padding: 5.5px 13.23px 5.5px 10px;
+    padding: 11px 13.23px 11px 10px;
 }
 
 .language-list-item:nth-child(3) {
-    padding: 5.5px 13.23px 11px 10px;
+    padding: 11px 13.23px 11px 10px;
 }
 
 .language-list-russian.active, .language-list-english.active, .language-list-uzbek.active {
@@ -365,6 +384,10 @@ a {
 }
 
 .sn-item:hover {
+    background: var(--red);
+}
+
+.sn-item.active {
     background: var(--red);
 }
 
@@ -473,25 +496,34 @@ a {
 }
 
 .nav-phones-drop, .nav-laptops-drop, .nav-tablets-drop {
-    display: none;
+    opacity: 0;
+    visibility: hidden;
+    transition: all .2s ease-in-out;
 }
 
 .sn-phone-item:hover ~ .nav-phones-drop, .nav-phones-drop:hover {
-    display: block;
+    opacity: 1;
+    visibility: visible;
 }
 
 .sn-laptop-item:hover ~ .nav-laptops-drop, .nav-laptops-drop:hover {
-    display: block;
+    opacity: 1;
+    visibility: visible;
 }
 
 .sn-tablet-item:hover ~ .nav-tablets-drop, .nav-tablets-drop:hover {
-    display: block;
+    opacity: 1;
+    visibility: visible;
 }
 
 /* Carousel */
 
 .carousel {
     margin-top: 30px;
+}
+
+.carousel-image {
+    border-radius: 5px;
 }
 
 /* Novetly */
@@ -686,18 +718,36 @@ a {
 }
 
 .novetly-availability-bag-wrapper {
+    position: relative;
     background: var(--red);
     border-radius: 0px 5px 5px 0px;
     transition: all .5s;
 }
 
-.novetly-availability-bag-wrapper:hover {
+.novetly-availability-bag-wrapper:before {
+    content: "";
+    opacity: 0;
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 0px 5px 5px 0px;
     background: radial-gradient(57.7% 100% at 50% 0%, #FF6B70 0%, #E30C13 100%);
-    box-shadow: 0px 5px 10px rgba(255, 21, 28, 0.3), inset 0px -2px 0px rgba(0, 0, 0, 0.25);
+    box-shadow: inset 0px -2px 0px rgba(0, 0, 0, 0.25);
+    transition: all .2s ease-in-out;
+}
+
+.novetly-availability-bag-wrapper:hover:before {
+    opacity: 1;
+    z-index: 1;
 }
 
 .novetly-availability-bag, .novetly-availability-check-mark {
     display: none;
+    position: relative;
+    z-index: 2;
 }
 
 .novetly-availability-bag {
@@ -759,7 +809,6 @@ a {
 .avengers-slider-item {
     position: relative;
     width: 270px;
-    height: 355px;
 }
 
 .hover-appear {
@@ -768,6 +817,7 @@ a {
 
 .avenger-slider-item-details {
     background: #292929;
+    transition: all .2s ease-in-out;
 }
 
 .avengers-slider-item:hover .hover-appear {
@@ -775,7 +825,7 @@ a {
 }
 
 .avengers-slider-item:hover .avenger-slider-item-details {
-    height: 197px;
+    height: 178px;
     width: 250px;
     position: absolute;
     bottom: 0;
@@ -803,6 +853,7 @@ a {
 }
 
 .link {
+    position: relative;
     font-weight: 600;
     font-size: 15px;
     line-height: 18px;
@@ -810,12 +861,26 @@ a {
     background: var(--red);
     padding: 16px 36px;
     border-radius: 5px;
-    transition: all .5s;
 }
 
-.link:hover {
+.link:before {
+    content: "";
+    opacity: 0;
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
     background: radial-gradient(57.7% 100% at 50% 0%, #FF6B70 0%, #E30C13 100%);
     box-shadow: inset 0px -2px 0px rgba(0, 0, 0, 0.25);
+    transition: all .2s ease-in-out;
+}
+
+.link:hover:before {
+    opacity: 1;
+    z-index: 1;
 }
 
 .avengers-slider-image {
@@ -997,6 +1062,10 @@ a {
     background-position: center bottom;
 }
 
+.mt-230 {
+    margin-top: 230px;
+}
+
 .footer-content {
     padding-top: 216px;
     display: flex;
@@ -1113,6 +1182,16 @@ a {
 
 /* Smartphones.html */
 
+/* Smartphones background */
+
+/* .smartphones-background {
+    background: linear-gradient(0deg, #151515 5.02%, rgba(21, 21, 21, 0) 100%), url(2542.jpg), #292929;
+    background-image: url(../img/Website-background/3d-effect.png);
+    background-repeat: no-repeat;
+    background-size: 1922px 1086px;
+    background-position: right top;
+} */
+
 /* Breadcrumber */
 
 .breadcrumber {
@@ -1149,8 +1228,12 @@ a {
 
 /* Smartphones Filter */
 
-.mt-53 {
-    margin-top: 53px;
+.mt-37 {
+    margin-top: 37px;
+}
+
+.mt-16 {
+    margin-top: 16px;
 }
 
 .smartphones-filter {
@@ -1159,7 +1242,6 @@ a {
 
 .smartphones-filter-content {
     width: 270px;
-    height: 369px;
     flex-direction: column;
     background: #1F1F1F;
     border-radius: 10px;
@@ -1167,7 +1249,7 @@ a {
 
 .smartphones-filter-heading-wrapper {
     padding: 21px 98px 16px 89px;
-    border-bottom: 1px solid #2C2C2C;
+    /* border-bottom: 1px solid #2C2C2C; */
 }
 
 .smartphones-filter-heading {
@@ -1181,7 +1263,7 @@ a {
     display: flex;
     justify-content: space-between;
     padding: 21px 20.72px 21px 25px;
-    border-bottom: 1px solid #2C2C2C;
+    border-top: 1px solid #2C2C2C;
 }
 
 .smartphones-filter-item-text {
@@ -1193,6 +1275,7 @@ a {
 .smartphones-filter-buttons-wrapper {
     padding: 31px 21px 39px 22px;
     display: flex;
+    border-top: 1px solid #2C2C2C;
 }
 
 .smartphones-filter-button-item {
@@ -1221,6 +1304,143 @@ a {
     margin-right: 7px;
 }
 
+/* Smartphones filter / Dropdown */
+
+/* First dropdown */
+
+.smartphones-filter-dropdown-producer {
+    display: none;
+}
+
+.smartphones-filter-dropdown-producer.active {
+    display: block;
+}
+
+.smartphones-filter-dropdown-producer-content {
+    padding: 0 22px 28px 26px;
+    flex-direction: column;
+}
+
+.smartphones-filter-dropdown-producer-item {
+    display: flex;
+}
+
+.smartphones-filter-dropdown-producer-image-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 106px;
+    height: 43px;
+    background: #FFF;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.smartphones-filter-dropdown-producer-image-item.active {
+    border: 1px solid #E13439;
+}
+
+.mb-10 {
+    margin-bottom: 10px;
+}
+
+/* Second Dropdown */
+
+.smartphones-filter-dropdown-model-content {
+    display: none;
+    margin: 0 21px 27px 26px;
+    background: #2C2C2C;
+    border-radius: 5px;
+    width: 223px;
+    height: 264px;
+    overflow-y: auto;
+}
+
+.smartphones-filter-dropdown-model-content.active {
+    display: block;
+}
+
+.smartphones-filter-dropdown-model-content::-webkit-scrollbar {
+    width: 5px;
+    height: 214px;
+}
+
+.smartphones-filter-dropdown-model-content::-webkit-scrollbar-track {
+    background: #E8F0F3;
+    border-radius: 5px;
+    margin-top: 6px;
+    margin-bottom: 44px;
+}
+
+.smartphones-filter-dropdown-model-content::-webkit-scrollbar-thumb {
+    background: #E13439;
+    border-radius: 5px;
+}
+
+.smartphones-filter-dropdown-model-item {
+    display: flex;
+    padding: 7px 0 7px 9px;
+    transition: background .1s ease-in-out;
+}
+
+.smartphones-filter-dropdown-model-item:hover {
+    background: #4B4B4B;
+}
+
+.smartphones-filter-dropdown-model-input {
+    margin-top: 7px;
+}
+
+.smartphones-filter-dropdown-model-text {
+    font-size: 12px;
+    line-height: 250%;
+    color: #FFFFFF;
+    margin-left: 11px;
+}
+
+.smartphones-filter-item-arrow {
+    transform: rotate(0);
+}
+
+.smartphones-filter-item-arrow.active {
+    transform: rotate(180deg);
+}
+
+/* Third Dropdown */
+
+.smartphones-filter-dropdown-price {
+    display: none;
+}
+
+.smartphones-filter-dropdown-price.active {
+    display: block;
+}
+
+.smartphones-filter-dropdown-price-content {
+    padding: 0 21px 27px 25px;
+    display: flex;
+}
+
+.smartphones-filter-dropdown-price-input {
+    border: none;
+    outline: none;
+    background: #2C2C2C;
+    border-radius: 5px;
+    width: 102px;
+    height: 43px;
+    padding-left: 19px;
+    color: #FFF;
+}
+
+.smartphones-filter-dropdown-price-item-mini {
+    margin: 0 7px;
+    font-size: 15px;
+    line-height: 150%;
+    color: #FFFFFF;
+    display: flex;
+    align-items: center;
+}
+
 /* Phone cards */
 
 .phone-cards {
@@ -1245,6 +1465,75 @@ a {
 
 .phone-cards-selector {
     margin-left: 401px;
+}
+
+.phone-cards-selector-item {
+    display: none;
+    cursor: pointer;
+    padding: 16px 20.72px 16px 28px;
+    background: #2C2C2C;
+    border-radius: 10px;
+}
+
+.phone-cards-selector-item-default.active, .phone-cards-selector-item-size.active, .phone-cards-selector-item-name.active, .phone-cards-selector-item-price.active {
+    display: block;
+}
+
+.phone-cards-selector-item-text, .phone-cards-selector-back-text {
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 18px;
+    color: #FFFFFF;
+}
+
+.phone-cards-selector-item-image {
+    margin-left: 51px;
+    margin-top: 5px;
+    margin-bottom: 6px;
+}
+
+.phone-cards-selector-back {
+    position: relative;
+    display: none;
+}
+
+.phone-cards-selector-back.active {
+    display: block;
+}
+
+.phone-cards-selector-back-list {
+    position: absolute;
+    top: 3px;
+    z-index: 3;
+}
+
+.phone-cards-selector-back-item {
+    cursor: pointer;
+    background: #2C2C2C;
+    width: 238px;
+    transition: background .1s ease-in-out;
+}
+
+.phone-cards-selector-back-item:hover {
+    background: #1C1C1C;
+}
+
+.phone-cards-selector-list-size.active, .phone-cards-selector-list-name.active, .phone-cards-selector-list-price.active {
+    background: #1C1C1C;
+}
+
+.phone-cards-selector-back-item:nth-child(1) {
+    padding: 16px 20.72px 16px 28px;
+    border-radius: 10px 10px 0 0;
+}
+
+.phone-cards-selector-back-item:nth-child(2) {
+    padding: 16px 20.72px 16px 28px;
+}
+
+.phone-cards-selector-back-item:nth-child(3) {
+    padding: 16px 20.72px 16px 28px;
+    border-radius: 0 0 10px 10px;
 }
 
 .phone-cards-content {
