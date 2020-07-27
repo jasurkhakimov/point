@@ -105,10 +105,17 @@ $(document).ready(function(){
 
     $(".smartphones-item-model").click(function () {
         $(".smartphones-filter-dropdown-model-content").toggleClass("active");
-    })
+    });
 
     $(".smartphones-item-price").click(function () {
         $(".smartphones-filter-dropdown-price").toggleClass("active");
+    });
+
+    // Novetlies Tabs
+
+    $(".novetlies-tabs-item").click(function () {
+        $(".novetlies-tabs-item").removeClass("active");
+        $(this).addClass("active");
     })
 
 
