@@ -6,6 +6,60 @@ $(document).ready(function(){
         items: 1,
     });
 
+    var mySwiper = new Swiper('.swiper-container', {
+        // Optional parameters
+        // direction: 'horizontal',
+        slidesPerView: 3,
+        slidesPerGroup: 3,
+        loop: true,
+        cssMode: true,
+        keyboard: true,
+        spaceBetween: 10,
+      
+        // If we need pagination
+        // pagination: {
+        //   el: '.swiper-pagination',
+        // },
+      
+        // Navigation arrows
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+        },
+      
+        // And if we need scrollbar
+        // scrollbar: {
+        //   el: '.swiper-scrollbar',
+        // },
+      })
+
+    var mySwiper = new Swiper('.swiper-container-2', {
+        // Optional parameters
+        // direction: 'horizontal',
+        slidesPerView: 4,
+        slidesPerGroup: 4,
+        loop: true,
+        cssMode: true,
+        keyboard: true,
+        spaceBetween: 30,
+      
+        // If we need pagination
+        // pagination: {
+        //   el: '.swiper-pagination',
+        // },
+      
+        // Navigation arrows
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+        },
+      
+        // And if we need scrollbar
+        // scrollbar: {
+        //   el: '.swiper-scrollbar',
+        // },
+      })
+
     // Language Switcher
 
     $(".language").click(function () {        
@@ -167,9 +221,38 @@ $(document).ready(function(){
     $(".product-lower-form-color-item-image").click(function () {
         $(".product-lower-form-color-item-image").removeClass("active");
         $(this).addClass("active");
-    })
+    });
 
+    // Delete buttons
+
+    $(".bag-page-upper-clean-button-wrapper").click(function () {
+        $(".bag-page-middle-card").addClass("turn-off");
+        $(".bag-page-line").addClass("turn-off");
+    });
+
+    $(".bag-page-middle-card-delete-wrapper").click(function () {
+        $(this).parents("div").parents(".bag-page-middle-card-price-and-delete-item").parents(".bag-page-middle-card-content").parents(".bag-page-middle-card").addClass("turn-off");
+    });
+
+    // Modal Window
+
+    $(".your-purchase-order-button").click(function () {
+        $(".focus").addClass("active");
+        $(".modal").addClass("active");
+        $(".home-page").addClass("turn-off");
+    });
+
+    $(".modal-button").click(function () {
+        $(".focus").removeClass("active");
+        $(".modal").removeClass("active");
+        $(".home-page").removeClass("turn-off");
+    });
     
+    // Bag drop panel
+
+    $(".sn-bag-item").click(function () {
+        $(".bag-drop-panel").toggleClass("active");
+    })
 
 
   });

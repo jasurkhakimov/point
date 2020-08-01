@@ -5,12 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> 3 nuqta</title>
 
-    <!-- Css -->
+    <!-- Vendor Css -->
     <link rel="stylesheet" href="css/reset.css">
-    <!-- Owl Carousel Css  -->
-        <!-- Home Page -->
-        <link rel="stylesheet" href="owl carousel/home-page/assets/owl.carousel.css">
-        <link rel="stylesheet" href="owl carousel/home-page/assets/owl.theme.default.css">
+        <!-- Owl Carousel Css  -->
+            <!-- Home Page -->
+            <link rel="stylesheet" href="owl carousel/home-page/assets/owl.carousel.css">
+            <link rel="stylesheet" href="owl carousel/home-page/assets/owl.theme.default.css">
+        <!-- Swiper Css -->
+            <link rel="stylesheet" href="css/swiper-bundle.css">
 
     <!-- User Css -->
     <link rel="stylesheet" href="css/style.css">
@@ -18,7 +20,7 @@
 </head>
 <body class="home-page">
 
-    <div class="common-div-for-nav-background-decor decor-left-1 decor-left-2">
+    <div class="common-div-for-nav-background-decor">
         <nav class="main-navbar">
             <div class="navbar-content container">
                 <div class="logo-wrapper">
@@ -229,6 +231,41 @@
                         <a href="#" class="sn-link black fw-600"> Корзина</a>
                         <div class="bag-counter"> 1</div>
                     </li>
+                    <div class="bag-drop-panel">
+                        <img src="img/Navbar/Polygon.png" alt="" class="polygon">
+                        <ul class="bag-drop-panel-content">
+                            <li class="your-purchases-item your-purchases-item-bag-padding">
+                                <div class="your-purchases-item-image-wrapper">
+                                    <img src="img/Checkout/Item-image.jpg" alt="" class="your-purchases-item-image">
+                                </div>
+                                <div class="your-purchases-item-text pt-1">
+                                    <div class="your-purchases-item-main-text w-203 fw-bold"> Кожаный чехол для планшета Samsung Galaxy Tab</div>
+                                    <div class="your-purchases-item-mini-text"> 2 x 60 000 сум</div>
+                                </div>
+                            </li>
+                            <div class="your-purchases-line bag-padding"></div>
+                            <li class="your-purchases-item your-purchases-item-bag-padding">
+                                <div class="your-purchases-item-image-wrapper">
+                                    <img src="img/Checkout/Item-image.jpg" alt="" class="your-purchases-item-image">
+                                </div>
+                                <div class="your-purchases-item-text pt-1">
+                                    <div class="your-purchases-item-main-text w-203 fw-bold"> Кожаный чехол для планшета Samsung Galaxy Tab</div>
+                                    <div class="your-purchases-item-mini-text"> 2 x 60 000 сум</div>
+                                </div>
+                            </li>
+                            <div class="your-purchases-line bag-padding"></div>
+                        </ul>
+                        <div class="bag-drop-panel-end">
+                            <div class="bag-drop-panel-end-first-wrapper">
+                                <button class="bag-drop-panel-end-first"> В корзинку</button>
+                            </div>
+                            <div class="bag-drop-panel-end-second-wrapper">
+                                <button class="bag-drop-panel-end-second">
+                                    <span class="z-2"> Купить</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
                 </ul>            
             </div>
         </nav>
@@ -598,124 +635,266 @@
                 </a>
             </div>
             <div class="avengers-slider">
-                <div class="avengers-slider-content">
-                    <div class="avengers-slider-item mr-10">
-                        <div class="avengers-item-image-wrapper">
-                            <img src="img/Avengers-banner/Avengers-slider-image.jpg" alt="" class="avengers-slider-image">
-                        </div>
-                        <div class="avenger-slider-item-details">
-                            <div class="avengers-item-texts">
-                                <div class="avenger-item-mini-text"> Чехлы для сматрфонов</div>
-                                <div class="avenger-item-mean-text"> Xiaomi redmi Note 7</div>
-                            </div>
-                            <div class="hover-appear">
-                                <div class="novetly-availability mt-17">
-                                    <div class="novetly-availability-content">
-                                        <div class="novetly-availability-price">
-                                            <div class="fz-15 novetly-availability-sale-text"> 52 000 сум</div>
-                                            <div class="fw-bold novetly-availability-no-sale-text"> 45 000 сум</div>
+                <div class="swiper-container avengers-slider-content">
+                    <div class="swiper-wrapper">
+                        <!-- Slides -->
+                        <div class="swiper-slide">
+                            <div class="avengers-slider-item">
+                                <div class="avengers-item-image-wrapper">
+                                    <img src="img/Avengers-banner/Avengers-slider-image.jpg" alt="" class="avengers-slider-image">
+                                </div>
+                                <div class="avenger-slider-item-details">
+                                    <div class="avengers-item-texts">
+                                        <div class="avenger-item-mini-text"> Чехлы для сматрфонов</div>
+                                        <div class="avenger-item-mean-text"> Xiaomi redmi Note 7</div>
+                                    </div>
+                                    <div class="hover-appear">
+                                        <div class="novetly-availability mt-17">
+                                            <div class="novetly-availability-content">
+                                                <div class="novetly-availability-price">
+                                                    <div class="fz-15 novetly-availability-sale-text"> 52 000 сум</div>
+                                                    <div class="fw-bold novetly-availability-no-sale-text"> 45 000 сум</div>
+                                                </div>
+                                                <div class="novetly-availability-bag-wrapper">
+                                                    <img src="img/Cards/Bag.png" alt="" class="novetly-availability-bag active">
+                                                    <img src="img/Cards/Check mark.png" alt="" class="novetly-availability-check-mark">
+                                                </div>
+                                            </div>
                                         </div>
-                                        <div class="novetly-availability-bag-wrapper">
-                                            <img src="img/Cards/Bag.png" alt="" class="novetly-availability-bag active">
-                                            <img src="img/Cards/Check mark.png" alt="" class="novetly-availability-check-mark">
+                                        <div class="novetly-availability-comfirm-wrapper">
+                                            <div class="novetly-availability-confutation-phase">
+                                                <div>
+                                                    <img src="img/Cards/Cross.png" alt="" class="novetly-availability-confutation-logo">
+                                                </div>
+                                                <div class="novetly-availability-confutation-text"> Нет в наличии</div>
+                                            </div>
+                                            <div class="novetly-availability-confirm-phase active">
+                                                <div>
+                                                    <img src="img/Cards/Green check mark.png" alt="" class="novetly-availability-confirm-logo">
+                                                </div>
+                                                <div class="novetly-availability-confirm-text"> Есть в наличии</div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="novetly-availability-comfirm-wrapper">
-                                    <div class="novetly-availability-confutation-phase">
-                                        <div>
-                                            <img src="img/Cards/Cross.png" alt="" class="novetly-availability-confutation-logo">
-                                        </div>
-                                        <div class="novetly-availability-confutation-text"> Нет в наличии</div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="avengers-slider-item">
+                                <div class="avengers-item-image-wrapper">
+                                    <img src="img/Avengers-banner/Avengers-slider-image.jpg" alt="" class="avengers-slider-image">
+                                </div>
+                                <div class="avenger-slider-item-details">
+                                    <div class="avengers-item-texts">
+                                        <div class="avenger-item-mini-text"> Чехлы для сматрфонов</div>
+                                        <div class="avenger-item-mean-text"> Xiaomi redmi Note 7</div>
                                     </div>
-                                    <div class="novetly-availability-confirm-phase active">
-                                        <div>
-                                            <img src="img/Cards/Green check mark.png" alt="" class="novetly-availability-confirm-logo">
+                                    <div class="hover-appear">
+                                        <div class="novetly-availability mt-17">
+                                            <div class="novetly-availability-content">
+                                                <div class="novetly-availability-price">
+                                                    <div class="fz-15 novetly-availability-sale-text"> 52 000 сум</div>
+                                                    <div class="fw-bold novetly-availability-no-sale-text"> 45 000 сум</div>
+                                                </div>
+                                                <div class="novetly-availability-bag-wrapper">
+                                                    <img src="img/Cards/Bag.png" alt="" class="novetly-availability-bag active">
+                                                    <img src="img/Cards/Check mark.png" alt="" class="novetly-availability-check-mark">
+                                                </div>
+                                            </div>
                                         </div>
-                                        <div class="novetly-availability-confirm-text"> Есть в наличии</div>
+                                        <div class="novetly-availability-comfirm-wrapper">
+                                            <div class="novetly-availability-confutation-phase">
+                                                <div>
+                                                    <img src="img/Cards/Cross.png" alt="" class="novetly-availability-confutation-logo">
+                                                </div>
+                                                <div class="novetly-availability-confutation-text"> Нет в наличии</div>
+                                            </div>
+                                            <div class="novetly-availability-confirm-phase active">
+                                                <div>
+                                                    <img src="img/Cards/Green check mark.png" alt="" class="novetly-availability-confirm-logo">
+                                                </div>
+                                                <div class="novetly-availability-confirm-text"> Есть в наличии</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide mr-important-0">
+                            <div class="avengers-slider-item">
+                                <div class="avengers-item-image-wrapper">
+                                    <img src="img/Avengers-banner/Avengers-slider-image.jpg" alt="" class="avengers-slider-image">
+                                </div>
+                                <div class="avenger-slider-item-details">
+                                    <div class="avengers-item-texts">
+                                        <div class="avenger-item-mini-text"> Чехлы для сматрфонов</div>
+                                        <div class="avenger-item-mean-text"> Xiaomi redmi Note 7</div>
+                                    </div>
+                                    <div class="hover-appear">
+                                        <div class="novetly-availability mt-17">
+                                            <div class="novetly-availability-content">
+                                                <div class="novetly-availability-price">
+                                                    <div class="fz-15 novetly-availability-sale-text"> 52 000 сум</div>
+                                                    <div class="fw-bold novetly-availability-no-sale-text"> 45 000 сум</div>
+                                                </div>
+                                                <div class="novetly-availability-bag-wrapper">
+                                                    <img src="img/Cards/Bag.png" alt="" class="novetly-availability-bag active">
+                                                    <img src="img/Cards/Check mark.png" alt="" class="novetly-availability-check-mark">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="novetly-availability-comfirm-wrapper">
+                                            <div class="novetly-availability-confutation-phase">
+                                                <div>
+                                                    <img src="img/Cards/Cross.png" alt="" class="novetly-availability-confutation-logo">
+                                                </div>
+                                                <div class="novetly-availability-confutation-text"> Нет в наличии</div>
+                                            </div>
+                                            <div class="novetly-availability-confirm-phase active">
+                                                <div>
+                                                    <img src="img/Cards/Green check mark.png" alt="" class="novetly-availability-confirm-logo">
+                                                </div>
+                                                <div class="novetly-availability-confirm-text"> Есть в наличии</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="avengers-slider-item">
+                                <div class="avengers-item-image-wrapper">
+                                    <img src="img/Avengers-banner/Avengers-slider-image.jpg" alt="" class="avengers-slider-image">
+                                </div>
+                                <div class="avenger-slider-item-details">
+                                    <div class="avengers-item-texts">
+                                        <div class="avenger-item-mini-text"> Чехлы для сматрфонов</div>
+                                        <div class="avenger-item-mean-text"> Xiaomi redmi Note 7</div>
+                                    </div>
+                                    <div class="hover-appear">
+                                        <div class="novetly-availability mt-17">
+                                            <div class="novetly-availability-content">
+                                                <div class="novetly-availability-price">
+                                                    <div class="fz-15 novetly-availability-sale-text"> 52 000 сум</div>
+                                                    <div class="fw-bold novetly-availability-no-sale-text"> 45 000 сум</div>
+                                                </div>
+                                                <div class="novetly-availability-bag-wrapper">
+                                                    <img src="img/Cards/Bag.png" alt="" class="novetly-availability-bag active">
+                                                    <img src="img/Cards/Check mark.png" alt="" class="novetly-availability-check-mark">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="novetly-availability-comfirm-wrapper">
+                                            <div class="novetly-availability-confutation-phase">
+                                                <div>
+                                                    <img src="img/Cards/Cross.png" alt="" class="novetly-availability-confutation-logo">
+                                                </div>
+                                                <div class="novetly-availability-confutation-text"> Нет в наличии</div>
+                                            </div>
+                                            <div class="novetly-availability-confirm-phase active">
+                                                <div>
+                                                    <img src="img/Cards/Green check mark.png" alt="" class="novetly-availability-confirm-logo">
+                                                </div>
+                                                <div class="novetly-availability-confirm-text"> Есть в наличии</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="avengers-slider-item">
+                                <div class="avengers-item-image-wrapper">
+                                    <img src="img/Avengers-banner/Avengers-slider-image.jpg" alt="" class="avengers-slider-image">
+                                </div>
+                                <div class="avenger-slider-item-details">
+                                    <div class="avengers-item-texts">
+                                        <div class="avenger-item-mini-text"> Чехлы для сматрфонов</div>
+                                        <div class="avenger-item-mean-text"> Xiaomi redmi Note 7</div>
+                                    </div>
+                                    <div class="hover-appear">
+                                        <div class="novetly-availability mt-17">
+                                            <div class="novetly-availability-content">
+                                                <div class="novetly-availability-price">
+                                                    <div class="fz-15 novetly-availability-sale-text"> 52 000 сум</div>
+                                                    <div class="fw-bold novetly-availability-no-sale-text"> 45 000 сум</div>
+                                                </div>
+                                                <div class="novetly-availability-bag-wrapper">
+                                                    <img src="img/Cards/Bag.png" alt="" class="novetly-availability-bag active">
+                                                    <img src="img/Cards/Check mark.png" alt="" class="novetly-availability-check-mark">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="novetly-availability-comfirm-wrapper">
+                                            <div class="novetly-availability-confutation-phase">
+                                                <div>
+                                                    <img src="img/Cards/Cross.png" alt="" class="novetly-availability-confutation-logo">
+                                                </div>
+                                                <div class="novetly-availability-confutation-text"> Нет в наличии</div>
+                                            </div>
+                                            <div class="novetly-availability-confirm-phase active">
+                                                <div>
+                                                    <img src="img/Cards/Green check mark.png" alt="" class="novetly-availability-confirm-logo">
+                                                </div>
+                                                <div class="novetly-availability-confirm-text"> Есть в наличии</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide mr-important-0">
+                            <div class="avengers-slider-item">
+                                <div class="avengers-item-image-wrapper">
+                                    <img src="img/Avengers-banner/Avengers-slider-image.jpg" alt="" class="avengers-slider-image">
+                                </div>
+                                <div class="avenger-slider-item-details">
+                                    <div class="avengers-item-texts">
+                                        <div class="avenger-item-mini-text"> Чехлы для сматрфонов</div>
+                                        <div class="avenger-item-mean-text"> Xiaomi redmi Note 7</div>
+                                    </div>
+                                    <div class="hover-appear">
+                                        <div class="novetly-availability mt-17">
+                                            <div class="novetly-availability-content">
+                                                <div class="novetly-availability-price">
+                                                    <div class="fz-15 novetly-availability-sale-text"> 52 000 сум</div>
+                                                    <div class="fw-bold novetly-availability-no-sale-text"> 45 000 сум</div>
+                                                </div>
+                                                <div class="novetly-availability-bag-wrapper">
+                                                    <img src="img/Cards/Bag.png" alt="" class="novetly-availability-bag active">
+                                                    <img src="img/Cards/Check mark.png" alt="" class="novetly-availability-check-mark">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="novetly-availability-comfirm-wrapper">
+                                            <div class="novetly-availability-confutation-phase">
+                                                <div>
+                                                    <img src="img/Cards/Cross.png" alt="" class="novetly-availability-confutation-logo">
+                                                </div>
+                                                <div class="novetly-availability-confutation-text"> Нет в наличии</div>
+                                            </div>
+                                            <div class="novetly-availability-confirm-phase active">
+                                                <div>
+                                                    <img src="img/Cards/Green check mark.png" alt="" class="novetly-availability-confirm-logo">
+                                                </div>
+                                                <div class="novetly-availability-confirm-text"> Есть в наличии</div>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="avengers-slider-item mr-10">
-                        <div class="avengers-item-image-wrapper">
-                            <img src="img/Avengers-banner/Avengers-slider-image.jpg" alt="" class="avengers-slider-image">
-                        </div>
-                        <div class="avenger-slider-item-details">
-                            <div class="avengers-item-texts">
-                                <div class="avenger-item-mini-text"> Чехлы для сматрфонов</div>
-                                <div class="avenger-item-mean-text"> Xiaomi redmi Note 7</div>
-                            </div>
-                            <div class="hover-appear">
-                                <div class="novetly-availability mt-17">
-                                    <div class="novetly-availability-content">
-                                        <div class="novetly-availability-price">
-                                            <div class="fz-15 novetly-availability-sale-text"> 52 000 сум</div>
-                                            <div class="fw-bold novetly-availability-no-sale-text"> 45 000 сум</div>
-                                        </div>
-                                        <div class="novetly-availability-bag-wrapper">
-                                            <img src="img/Cards/Bag.png" alt="" class="novetly-availability-bag active">
-                                            <img src="img/Cards/Check mark.png" alt="" class="novetly-availability-check-mark">
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="novetly-availability-comfirm-wrapper">
-                                    <div class="novetly-availability-confutation-phase">
-                                        <div>
-                                            <img src="img/Cards/Cross.png" alt="" class="novetly-availability-confutation-logo">
-                                        </div>
-                                        <div class="novetly-availability-confutation-text"> Нет в наличии</div>
-                                    </div>
-                                    <div class="novetly-availability-confirm-phase active">
-                                        <div>
-                                            <img src="img/Cards/Green check mark.png" alt="" class="novetly-availability-confirm-logo">
-                                        </div>
-                                        <div class="novetly-availability-confirm-text"> Есть в наличии</div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="avengers-slider-item">
-                        <div class="avengers-item-image-wrapper">
-                            <img src="img/Avengers-banner/Avengers-slider-image.jpg" alt="" class="avengers-slider-image">
-                        </div>
-                        <div class="avenger-slider-item-details">
-                            <div class="avengers-item-texts">
-                                <div class="avenger-item-mini-text"> Чехлы для сматрфонов</div>
-                                <div class="avenger-item-mean-text"> Xiaomi redmi Note 7</div>
-                            </div>
-                            <div class="hover-appear">
-                                <div class="novetly-availability mt-17">
-                                    <div class="novetly-availability-content">
-                                        <div class="novetly-availability-price">
-                                            <div class="fz-15 novetly-availability-sale-text"> 52 000 сум</div>
-                                            <div class="fw-bold novetly-availability-no-sale-text"> 45 000 сум</div>
-                                        </div>
-                                        <div class="novetly-availability-bag-wrapper">
-                                            <img src="img/Cards/Bag.png" alt="" class="novetly-availability-bag active">
-                                            <img src="img/Cards/Check mark.png" alt="" class="novetly-availability-check-mark">
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="novetly-availability-comfirm-wrapper">
-                                    <div class="novetly-availability-confutation-phase">
-                                        <div>
-                                            <img src="img/Cards/Cross.png" alt="" class="novetly-availability-confutation-logo">
-                                        </div>
-                                        <div class="novetly-availability-confutation-text"> Нет в наличии</div>
-                                    </div>
-                                    <div class="novetly-availability-confirm-phase active">
-                                        <div>
-                                            <img src="img/Cards/Green check mark.png" alt="" class="novetly-availability-confirm-logo">
-                                        </div>
-                                        <div class="novetly-availability-confirm-text"> Есть в наличии</div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                    <!-- If we need pagination -->
+                    <!-- <div class="swiper-pagination"></div> -->
+                
+                    <!-- If we need navigation buttons -->
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                
+                    <!-- If we need scrollbar -->
+                    <!-- <div class="swiper-scrollbar"></div> -->
+
                 </div>
             </div>
         </div>
@@ -731,163 +910,351 @@
                     <a href="#" class="banner-secondary-text fw-600 fz-15"> Посмотреть все</a>
                 </div>
             </div>
-            <div class="popular-content">
-                <div class="novetly-card mr-30">
-                    <div class="novetly-card-content">
-                        <div class="novetly-card-image-wrapper">
-                            <img src="img/Cards/Card-image.jpg" alt="" class="novetly-card-image">
-                            <div class="novetly-label"> Новинка</div>
-                            <div class="sale-label"> Скидка</div>
-                        </div>
-                        <div class="novetly-card-texts">
-                            <div class="novetly-card-mini-text"> Чехлы для сматрфонов</div>
-                            <div class="novetly-card-mean-text"> Xiaomi redmi Note 7</div>
-                        </div>
-                        <div class="novetly-availability">
-                            <div class="novetly-availability-content">
-                                <div class="novetly-availability-price">
-                                    <div class="novetly-availability-sale-text fz-15"> 52 000 сум</div>
-                                    <div class="novetly-availability-no-sale-text fw-bold"> 45 000 сум</div>
+            <div class="swiper-container-2 popular-content">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide">
+                        <div class="novetly-card">
+                            <div class="novetly-card-content">
+                                <div class="novetly-card-image-wrapper">
+                                    <img src="img/Cards/Card-image.jpg" alt="" class="novetly-card-image">
+                                    <div class="novetly-label"> Новинка</div>
+                                    <div class="sale-label"> Скидка</div>
                                 </div>
-                                <div class="novetly-availability-bag-wrapper">
-                                    <img src="img/Cards/Bag.png" alt="" class="novetly-availability-bag active">
-                                    <img src="img/Cards/Check mark.png" alt="" class="novetly-availability-check-mark">
+                                <div class="novetly-card-texts">
+                                    <div class="novetly-card-mini-text"> Чехлы для сматрфонов</div>
+                                    <div class="novetly-card-mean-text"> Xiaomi redmi Note 7</div>
+                                </div>
+                                <div class="novetly-availability">
+                                    <div class="novetly-availability-content">
+                                        <div class="novetly-availability-price">
+                                            <div class="novetly-availability-sale-text fz-15"> 52 000 сум</div>
+                                            <div class="novetly-availability-no-sale-text fw-bold"> 45 000 сум</div>
+                                        </div>
+                                        <div class="novetly-availability-bag-wrapper">
+                                            <img src="img/Cards/Bag.png" alt="" class="novetly-availability-bag active">
+                                            <img src="img/Cards/Check mark.png" alt="" class="novetly-availability-check-mark">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="novetly-availability-comfirm-wrapper">
+                                    <div class="novetly-availability-confutation-phase">
+                                        <div>
+                                            <img src="img/Cards/Cross.png" alt="" class="novetly-availability-confutation-logo">
+                                        </div>
+                                        <div class="novetly-availability-confutation-text"> Нет в наличии</div>
+                                    </div>
+                                    <div class="novetly-availability-confirm-phase active">
+                                        <div>
+                                            <img src="img/Cards/Green check mark.png" alt="" class="novetly-availability-confirm-logo">
+                                        </div>
+                                        <div class="novetly-availability-confirm-text"> Есть в наличии</div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="novetly-availability-comfirm-wrapper">
-                            <div class="novetly-availability-confutation-phase">
-                                <div>
-                                    <img src="img/Cards/Cross.png" alt="" class="novetly-availability-confutation-logo">
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="novetly-card">
+                            <div class="novetly-card-content">
+                                <div class="novetly-card-image-wrapper">
+                                    <img src="img/Cards/Card-image.jpg" alt="" class="novetly-card-image">
+                                    <div class="novetly-label"> Новинка</div>
+                                    <div class="sale-label"> Скидка</div>
                                 </div>
-                                <div class="novetly-availability-confutation-text"> Нет в наличии</div>
+                                <div class="novetly-card-texts">
+                                    <div class="novetly-card-mini-text"> Чехлы для сматрфонов</div>
+                                    <div class="novetly-card-mean-text"> Xiaomi redmi Note 7</div>
+                                </div>
+                                <div class="novetly-availability">
+                                    <div class="novetly-availability-content">
+                                        <div class="novetly-availability-price">
+                                            <div class="novetly-availability-sale-text fz-15"> 52 000 сум</div>
+                                            <div class="novetly-availability-no-sale-text fw-bold"> 45 000 сум</div>
+                                        </div>
+                                        <div class="novetly-availability-bag-wrapper">
+                                            <img src="img/Cards/Bag.png" alt="" class="novetly-availability-bag active">
+                                            <img src="img/Cards/Check mark.png" alt="" class="novetly-availability-check-mark">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="novetly-availability-comfirm-wrapper">
+                                    <div class="novetly-availability-confutation-phase">
+                                        <div>
+                                            <img src="img/Cards/Cross.png" alt="" class="novetly-availability-confutation-logo">
+                                        </div>
+                                        <div class="novetly-availability-confutation-text"> Нет в наличии</div>
+                                    </div>
+                                    <div class="novetly-availability-confirm-phase active">
+                                        <div>
+                                            <img src="img/Cards/Green check mark.png" alt="" class="novetly-availability-confirm-logo">
+                                        </div>
+                                        <div class="novetly-availability-confirm-text"> Есть в наличии</div>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="novetly-availability-confirm-phase active">
-                                <div>
-                                    <img src="img/Cards/Green check mark.png" alt="" class="novetly-availability-confirm-logo">
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="novetly-card">
+                            <div class="novetly-card-content">
+                                <div class="novetly-card-image-wrapper">
+                                    <img src="img/Cards/Card-image.jpg" alt="" class="novetly-card-image">
+                                    <div class="novetly-label"> Новинка</div>
+                                    <div class="sale-label"> Скидка</div>
                                 </div>
-                                <div class="novetly-availability-confirm-text"> Есть в наличии</div>
+                                <div class="novetly-card-texts">
+                                    <div class="novetly-card-mini-text"> Чехлы для сматрфонов</div>
+                                    <div class="novetly-card-mean-text"> Xiaomi redmi Note 7</div>
+                                </div>
+                                <div class="novetly-availability">
+                                    <div class="novetly-availability-content">
+                                        <div class="novetly-availability-price">
+                                            <div class="novetly-availability-sale-text fz-15"> 52 000 сум</div>
+                                            <div class="novetly-availability-no-sale-text fw-bold"> 45 000 сум</div>
+                                        </div>
+                                        <div class="novetly-availability-bag-wrapper">
+                                            <img src="img/Cards/Bag.png" alt="" class="novetly-availability-bag active">
+                                            <img src="img/Cards/Check mark.png" alt="" class="novetly-availability-check-mark">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="novetly-availability-comfirm-wrapper">
+                                    <div class="novetly-availability-confutation-phase">
+                                        <div>
+                                            <img src="img/Cards/Cross.png" alt="" class="novetly-availability-confutation-logo">
+                                        </div>
+                                        <div class="novetly-availability-confutation-text"> Нет в наличии</div>
+                                    </div>
+                                    <div class="novetly-availability-confirm-phase active">
+                                        <div>
+                                            <img src="img/Cards/Green check mark.png" alt="" class="novetly-availability-confirm-logo">
+                                        </div>
+                                        <div class="novetly-availability-confirm-text"> Есть в наличии</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="novetly-card">
+                            <div class="novetly-card-content">
+                                <div class="novetly-card-image-wrapper">
+                                    <img src="img/Cards/Card-image.jpg" alt="" class="novetly-card-image">
+                                    <div class="novetly-label"> Новинка</div>
+                                    <div class="sale-label"> Скидка</div>
+                                </div>
+                                <div class="novetly-card-texts">
+                                    <div class="novetly-card-mini-text"> Чехлы для сматрфонов</div>
+                                    <div class="novetly-card-mean-text"> Xiaomi redmi Note 7</div>
+                                </div>
+                                <div class="novetly-availability">
+                                    <div class="novetly-availability-content">
+                                        <div class="novetly-availability-price">
+                                            <div class="novetly-availability-sale-text fz-15"> 52 000 сум</div>
+                                            <div class="novetly-availability-no-sale-text fw-bold"> 45 000 сум</div>
+                                        </div>
+                                        <div class="novetly-availability-bag-wrapper">
+                                            <img src="img/Cards/Bag.png" alt="" class="novetly-availability-bag active">
+                                            <img src="img/Cards/Check mark.png" alt="" class="novetly-availability-check-mark">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="novetly-availability-comfirm-wrapper">
+                                    <div class="novetly-availability-confutation-phase">
+                                        <div>
+                                            <img src="img/Cards/Cross.png" alt="" class="novetly-availability-confutation-logo">
+                                        </div>
+                                        <div class="novetly-availability-confutation-text"> Нет в наличии</div>
+                                    </div>
+                                    <div class="novetly-availability-confirm-phase active">
+                                        <div>
+                                            <img src="img/Cards/Green check mark.png" alt="" class="novetly-availability-confirm-logo">
+                                        </div>
+                                        <div class="novetly-availability-confirm-text"> Есть в наличии</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="novetly-card">
+                            <div class="novetly-card-content">
+                                <div class="novetly-card-image-wrapper">
+                                    <img src="img/Cards/Card-image.jpg" alt="" class="novetly-card-image">
+                                    <div class="novetly-label"> Новинка</div>
+                                    <div class="sale-label"> Скидка</div>
+                                </div>
+                                <div class="novetly-card-texts">
+                                    <div class="novetly-card-mini-text"> Чехлы для сматрфонов</div>
+                                    <div class="novetly-card-mean-text"> Xiaomi redmi Note 7</div>
+                                </div>
+                                <div class="novetly-availability">
+                                    <div class="novetly-availability-content">
+                                        <div class="novetly-availability-price">
+                                            <div class="novetly-availability-sale-text fz-15"> 52 000 сум</div>
+                                            <div class="novetly-availability-no-sale-text fw-bold"> 45 000 сум</div>
+                                        </div>
+                                        <div class="novetly-availability-bag-wrapper">
+                                            <img src="img/Cards/Bag.png" alt="" class="novetly-availability-bag active">
+                                            <img src="img/Cards/Check mark.png" alt="" class="novetly-availability-check-mark">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="novetly-availability-comfirm-wrapper">
+                                    <div class="novetly-availability-confutation-phase">
+                                        <div>
+                                            <img src="img/Cards/Cross.png" alt="" class="novetly-availability-confutation-logo">
+                                        </div>
+                                        <div class="novetly-availability-confutation-text"> Нет в наличии</div>
+                                    </div>
+                                    <div class="novetly-availability-confirm-phase active">
+                                        <div>
+                                            <img src="img/Cards/Green check mark.png" alt="" class="novetly-availability-confirm-logo">
+                                        </div>
+                                        <div class="novetly-availability-confirm-text"> Есть в наличии</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="novetly-card">
+                            <div class="novetly-card-content">
+                                <div class="novetly-card-image-wrapper">
+                                    <img src="img/Cards/Card-image.jpg" alt="" class="novetly-card-image">
+                                    <div class="novetly-label"> Новинка</div>
+                                    <div class="sale-label"> Скидка</div>
+                                </div>
+                                <div class="novetly-card-texts">
+                                    <div class="novetly-card-mini-text"> Чехлы для сматрфонов</div>
+                                    <div class="novetly-card-mean-text"> Xiaomi redmi Note 7</div>
+                                </div>
+                                <div class="novetly-availability">
+                                    <div class="novetly-availability-content">
+                                        <div class="novetly-availability-price">
+                                            <div class="novetly-availability-sale-text fz-15"> 52 000 сум</div>
+                                            <div class="novetly-availability-no-sale-text fw-bold"> 45 000 сум</div>
+                                        </div>
+                                        <div class="novetly-availability-bag-wrapper">
+                                            <img src="img/Cards/Bag.png" alt="" class="novetly-availability-bag active">
+                                            <img src="img/Cards/Check mark.png" alt="" class="novetly-availability-check-mark">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="novetly-availability-comfirm-wrapper">
+                                    <div class="novetly-availability-confutation-phase">
+                                        <div>
+                                            <img src="img/Cards/Cross.png" alt="" class="novetly-availability-confutation-logo">
+                                        </div>
+                                        <div class="novetly-availability-confutation-text"> Нет в наличии</div>
+                                    </div>
+                                    <div class="novetly-availability-confirm-phase active">
+                                        <div>
+                                            <img src="img/Cards/Green check mark.png" alt="" class="novetly-availability-confirm-logo">
+                                        </div>
+                                        <div class="novetly-availability-confirm-text"> Есть в наличии</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="novetly-card">
+                            <div class="novetly-card-content">
+                                <div class="novetly-card-image-wrapper">
+                                    <img src="img/Cards/Card-image.jpg" alt="" class="novetly-card-image">
+                                    <div class="novetly-label"> Новинка</div>
+                                    <div class="sale-label"> Скидка</div>
+                                </div>
+                                <div class="novetly-card-texts">
+                                    <div class="novetly-card-mini-text"> Чехлы для сматрфонов</div>
+                                    <div class="novetly-card-mean-text"> Xiaomi redmi Note 7</div>
+                                </div>
+                                <div class="novetly-availability">
+                                    <div class="novetly-availability-content">
+                                        <div class="novetly-availability-price">
+                                            <div class="novetly-availability-sale-text fz-15"> 52 000 сум</div>
+                                            <div class="novetly-availability-no-sale-text fw-bold"> 45 000 сум</div>
+                                        </div>
+                                        <div class="novetly-availability-bag-wrapper">
+                                            <img src="img/Cards/Bag.png" alt="" class="novetly-availability-bag active">
+                                            <img src="img/Cards/Check mark.png" alt="" class="novetly-availability-check-mark">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="novetly-availability-comfirm-wrapper">
+                                    <div class="novetly-availability-confutation-phase">
+                                        <div>
+                                            <img src="img/Cards/Cross.png" alt="" class="novetly-availability-confutation-logo">
+                                        </div>
+                                        <div class="novetly-availability-confutation-text"> Нет в наличии</div>
+                                    </div>
+                                    <div class="novetly-availability-confirm-phase active">
+                                        <div>
+                                            <img src="img/Cards/Green check mark.png" alt="" class="novetly-availability-confirm-logo">
+                                        </div>
+                                        <div class="novetly-availability-confirm-text"> Есть в наличии</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="novetly-card">
+                            <div class="novetly-card-content">
+                                <div class="novetly-card-image-wrapper">
+                                    <img src="img/Cards/Card-image.jpg" alt="" class="novetly-card-image">
+                                    <div class="novetly-label"> Новинка</div>
+                                    <div class="sale-label"> Скидка</div>
+                                </div>
+                                <div class="novetly-card-texts">
+                                    <div class="novetly-card-mini-text"> Чехлы для сматрфонов</div>
+                                    <div class="novetly-card-mean-text"> Xiaomi redmi Note 7</div>
+                                </div>
+                                <div class="novetly-availability">
+                                    <div class="novetly-availability-content">
+                                        <div class="novetly-availability-price">
+                                            <div class="novetly-availability-sale-text fz-15"> 52 000 сум</div>
+                                            <div class="novetly-availability-no-sale-text fw-bold"> 45 000 сум</div>
+                                        </div>
+                                        <div class="novetly-availability-bag-wrapper">
+                                            <img src="img/Cards/Bag.png" alt="" class="novetly-availability-bag active">
+                                            <img src="img/Cards/Check mark.png" alt="" class="novetly-availability-check-mark">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="novetly-availability-comfirm-wrapper">
+                                    <div class="novetly-availability-confutation-phase">
+                                        <div>
+                                            <img src="img/Cards/Cross.png" alt="" class="novetly-availability-confutation-logo">
+                                        </div>
+                                        <div class="novetly-availability-confutation-text"> Нет в наличии</div>
+                                    </div>
+                                    <div class="novetly-availability-confirm-phase active">
+                                        <div>
+                                            <img src="img/Cards/Green check mark.png" alt="" class="novetly-availability-confirm-logo">
+                                        </div>
+                                        <div class="novetly-availability-confirm-text"> Есть в наличии</div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="novetly-card mr-30">
-                    <div class="novetly-card-content">
-                        <div class="novetly-card-image-wrapper">
-                            <img src="img/Cards/Card-image.jpg" alt="" class="novetly-card-image">
-                            <div class="novetly-label"> Новинка</div>
-                            <div class="sale-label"> Скидка</div>
-                        </div>
-                        <div class="novetly-card-texts">
-                            <div class="novetly-card-mini-text"> Чехлы для сматрфонов</div>
-                            <div class="novetly-card-mean-text"> Xiaomi redmi Note 7</div>
-                        </div>
-                        <div class="novetly-availability">
-                            <div class="novetly-availability-content">
-                                <div class="novetly-availability-price">
-                                    <div class="novetly-availability-sale-text fz-15"> 52 000 сум</div>
-                                    <div class="novetly-availability-no-sale-text fw-bold"> 45 000 сум</div>
-                                </div>
-                                <div class="novetly-availability-bag-wrapper">
-                                    <img src="img/Cards/Bag.png" alt="" class="novetly-availability-bag active">
-                                    <img src="img/Cards/Check mark.png" alt="" class="novetly-availability-check-mark">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="novetly-availability-comfirm-wrapper">
-                            <div class="novetly-availability-confutation-phase">
-                                <div>
-                                    <img src="img/Cards/Cross.png" alt="" class="novetly-availability-confutation-logo">
-                                </div>
-                                <div class="novetly-availability-confutation-text"> Нет в наличии</div>
-                            </div>
-                            <div class="novetly-availability-confirm-phase active">
-                                <div>
-                                    <img src="img/Cards/Green check mark.png" alt="" class="novetly-availability-confirm-logo">
-                                </div>
-                                <div class="novetly-availability-confirm-text"> Есть в наличии</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="novetly-card mr-30">
-                    <div class="novetly-card-content">
-                        <div class="novetly-card-image-wrapper">
-                            <img src="img/Cards/Card-image.jpg" alt="" class="novetly-card-image">
-                            <div class="novetly-label"> Новинка</div>
-                            <div class="sale-label"> Скидка</div>
-                        </div>
-                        <div class="novetly-card-texts">
-                            <div class="novetly-card-mini-text"> Чехлы для сматрфонов</div>
-                            <div class="novetly-card-mean-text"> Xiaomi redmi Note 7</div>
-                        </div>
-                        <div class="novetly-availability">
-                            <div class="novetly-availability-content">
-                                <div class="novetly-availability-price">
-                                    <div class="novetly-availability-sale-text fz-15"> 52 000 сум</div>
-                                    <div class="novetly-availability-no-sale-text fw-bold"> 45 000 сум</div>
-                                </div>
-                                <div class="novetly-availability-bag-wrapper">
-                                    <img src="img/Cards/Bag.png" alt="" class="novetly-availability-bag active">
-                                    <img src="img/Cards/Check mark.png" alt="" class="novetly-availability-check-mark">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="novetly-availability-comfirm-wrapper">
-                            <div class="novetly-availability-confutation-phase">
-                                <div>
-                                    <img src="img/Cards/Cross.png" alt="" class="novetly-availability-confutation-logo">
-                                </div>
-                                <div class="novetly-availability-confutation-text"> Нет в наличии</div>
-                            </div>
-                            <div class="novetly-availability-confirm-phase active">
-                                <div>
-                                    <img src="img/Cards/Green check mark.png" alt="" class="novetly-availability-confirm-logo">
-                                </div>
-                                <div class="novetly-availability-confirm-text"> Есть в наличии</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="novetly-card">
-                    <div class="novetly-card-content">
-                        <div class="novetly-card-image-wrapper">
-                            <img src="img/Cards/Card-image.jpg" alt="" class="novetly-card-image">
-                            <div class="novetly-label"> Новинка</div>
-                            <div class="sale-label"> Скидка</div>
-                        </div>
-                        <div class="novetly-card-texts">
-                            <div class="novetly-card-mini-text"> Чехлы для сматрфонов</div>
-                            <div class="novetly-card-mean-text"> Xiaomi redmi Note 7</div>
-                        </div>
-                        <div class="novetly-availability">
-                            <div class="novetly-availability-content">
-                                <div class="novetly-availability-price">
-                                    <div class="novetly-availability-sale-text fz-15"> 52 000 сум</div>
-                                    <div class="novetly-availability-no-sale-text fw-bold"> 45 000 сум</div>
-                                </div>
-                                <div class="novetly-availability-bag-wrapper">
-                                    <img src="img/Cards/Bag.png" alt="" class="novetly-availability-bag active">
-                                    <img src="img/Cards/Check mark.png" alt="" class="novetly-availability-check-mark">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="novetly-availability-comfirm-wrapper">
-                            <div class="novetly-availability-confutation-phase">
-                                <div>
-                                    <img src="img/Cards/Cross.png" alt="" class="novetly-availability-confutation-logo">
-                                </div>
-                                <div class="novetly-availability-confutation-text"> Нет в наличии</div>
-                            </div>
-                            <div class="novetly-availability-confirm-phase active">
-                                <div>
-                                    <img src="img/Cards/Green check mark.png" alt="" class="novetly-availability-confirm-logo">
-                                </div>
-                                <div class="novetly-availability-confirm-text"> Есть в наличии</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                <!-- If we need pagination -->
+                <!-- <div class="swiper-pagination"></div> -->
+            
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            
+                <!-- If we need scrollbar -->
+                <!-- <div class="swiper-scrollbar"></div> -->
+
+                
+                
             </div>
         </div>
     
@@ -939,7 +1306,7 @@
                     <div class="social-media">
                         <img src="img/Foooter/Telegram.png" alt="" class="footer-logo">
                         <img src="img/Foooter/Facebook.png" alt="" class="footer-logo">
-                        <img src="img/Foooter/Instagram.png" alt="" class="footer-logo mr-0">
+                        <img src="img/Foooter/Instagram.png" style="transform: rotate(-90deg);" alt="" class="footer-logo mr-0">
                     </div>
                 </div>
                 <div class="footer-nav">
@@ -981,6 +1348,7 @@
     <!-- Vendor Scripts -->
     <script src="js/jquery-3.5.1.min.js"></script>
     <script src="owl carousel/home-page/owl.carousel.min.js"></script>
+    <script src="js/swiper-bundle.min.js"></script>
 
     <!-- User Scripts -->
     <script src="js/main.js"></script>

@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> 3 nuqta / Корзина / Оформить покупку</title>
+
+    <!-- Css -->
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/checkbox-style.css">
+
+    <!-- User Css -->
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body class="home-page">
+
+    <div class="modal">
+        <div class="modal-content">
+            <div class="modal-heading fw-bold"> Мы приняли вашу заявку</div>
+            <div class="mt-35">
+                <img src="img/Checkout/Done.png" alt="" class="modal-image">
+            </div>
+            <div class="modal-text"> Скоро опытный и деликатный менеджер свяжется с вами</div>
+            <button class="modal-button">
+                <span class="z-2"> Хорошо</span>
+            </button>
+        </div>
+    </div>
+
+    <div class="focus">
+        <nav class="main-navbar">
+            <div class="navbar-content container">
+                <div class="logo-wrapper">
+                    <a href="index.html"><img src="img/Navbar/Logo.png" alt="" class="logo"></a>
+                </div>
+                <div class="search-wrapper">
+                    <input type="text" class="search" placeholder="Поиск по каталогу">
+                    <button class="search-filter-wrapper"><img src="img/Navbar/Filter.png" alt="" class="search-filter"></button>
+                    <button class="search-button" type="submit">
+                        <span class="z-2"> Найти</span>
+                    </button>
+                </div>
+                <div class="number-wrapper">
+                    <div class="phone-logo-wrapper">
+                        <img src="img/Navbar/Phone.png" alt="" class="phone-logo">
+                    </div>
+                    <div class="phone-texts">
+                        <div class="phone-time"> 09:00 - 20:00</div>
+                        <div class="phone-number fz-15"> +998 (00) 000-00-00</div>
+                        <a href="#" class="phone-link"> Заказать звонок</a>
+                    </div>
+                </div>
+                <div class="language-switcher">
+                    <div class="languages-wrapper">
+                        <div class="language language-russian active">
+                            <div class="flex center">
+                                <div class="flag-wrapper">
+                                    <img src="img/Navbar/Russia.png" alt="" class="flag">
+                                </div>
+                                <div class="language-text-wrapper">
+                                    <div class="language-text"> Рус</div>
+                                </div>
+                                <div class="drop-button-wrapper">
+                                    <img src="img/Navbar/Drop-button.png" alt="" class="drop-button">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="language language-english">
+                            <div class="flex center">
+                                <div class="flag-wrapper">
+                                    <img src="img/Navbar/Uk.png" alt="" class="flag">
+                                </div>
+                                <div class="language-text-wrapper">
+                                    <div class="language-text"> Eng</div>
+                                </div>
+                                <div class="drop-button-wrapper">
+                                    <img src="img/Navbar/Drop-button.png" alt="" class="drop-button">
+                                </div>
+                            </div>
+                        </div>  
+                        <div class="language language-uzbek">
+                            <div class="flex center">
+                                <div class="flag-wrapper">
+                                    <img src="img/Navbar/Uzbekistan.png" alt="" class="flag">
+                                </div>
+                                <div class="language-text-wrapper">
+                                    <div class="language-text"> Uzb</div>
+                                </div>
+                                <div class="drop-button-wrapper">
+                                    <img src="img/Navbar/Drop-button.png" alt="" class="drop-button">
+                                </div>
+                            </div>
+                        </div>  
+                    </div>
+                    <div class="language-list">
+                        <div class="relative">
+                            <div class="language-list-item language-item-border-radius-top language-list-russian active">
+                                <div class="flex">
+                                    <div class="flag-wrapper">
+                                        <img src="img/Navbar/Russia.png" alt="" class="flag">
+                                    </div>
+                                    <div class="language-text-wrapper">
+                                        <div class="language-text"> Рус</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="language-list-item language-list-english">
+                                <div class="flex">
+                                    <div class="flag-wrapper">
+                                        <img src="img/Navbar/Uk.png" alt="" class="flag">
+                                    </div>
+                                    <div class="language-text-wrapper">
+                                        <div class="language-text mt-2"> Eng</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="language-list-item language-item-border-radius-bottom language-list-uzbek">
+                                <div class="flex">
+                                    <div class="flag-wrapper">
+                                        <img src="img/Navbar/Uzbekistan.png" alt="" class="flag">
+                                    </div>
+                                    <div class="language-text-wrapper">
+                                        <div class="language-text mt-2"> Uzb</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <div class="navbar-back-place"></div>
+    
+        <nav class="secondary-navbar container">
+            <div class="sn-content">
+                <ul class="sn-list">
+                    <li class="sn-item sn-phone-item">
+                        <a href="smartphones.html" class="sn-link p-36"> Смартфоны</a>
+                        <img src="img/Navbar/Sn-drop-button.png" alt="" class="sn-drop-button">
+                    </li>
+                    <div class="nav-drop-panel nav-phones-drop">
+                        <div class="nav-drop-panel-content">
+                            <div class="nav-drop-panel-item nav-drop-panel-border-radius-start">
+                                <a href="#"><img src="img/Navbar/Apple.png" style="width: 32px !important;" alt="" class="nav-drop-panel-brand"></a>
+                            </div>
+                            <div class="nav-drop-panel-item">
+                                <a href="#"><img src="img/Navbar/Samsung.png" style="width: 133px !important;" alt="" class="nav-drop-panel-brand"></a>
+                            </div>
+                            <div class="nav-drop-panel-item">
+                                <a href="#"><img src="img/Navbar/Dell.png" style="width: 83px !important;" alt="" class="nav-drop-panel-brand"></a>
+                            </div>
+                            <div class="nav-drop-panel-item">
+                                <a href="#"><img src="img/Navbar/Acer.png" style="width: 94px !important;" alt="" class="nav-drop-panel-brand"></a>
+                            </div>
+                            <div class="nav-drop-panel-item">
+                                <a href="#"><img src="img/Navbar/hp.png" style="width: 39px !important;" alt="" class="nav-drop-panel-brand"></a>
+                            </div>
+                            <div class="nav-drop-panel-item">
+                                <a href="#"><img src="img/Navbar/Lenovo.png" style="width: 101px !important;" alt="" class="nav-drop-panel-brand"></a>
+                            </div>
+                            <div class="nav-drop-panel-item">
+                                <a href="#"><img src="img/Navbar/Asus.png" style="width: 106px !important;" alt="" class="nav-drop-panel-brand"></a>
+                            </div>
+                            <div class="nav-carousel-arrow-place nav-drop-panel-border-radius-end"></div>
+                        </div>
+                    </div>
+                    <li class="sn-item sn-laptop-item">
+                        <a href="#" class="sn-link p-36"> Ноутбуки</a>
+                        <img src="img/Navbar/Sn-drop-button.png" alt="" class="sn-drop-button">
+                    </li>
+                    <div class="nav-drop-panel nav-laptops-drop">
+                        <div class="nav-drop-panel-content">
+                            <div class="nav-drop-panel-item nav-drop-panel-border-radius-start">
+                                <a href="#"><img src="img/Navbar/Apple.png" style="width: 32px !important;" alt="" class="nav-drop-panel-brand"></a>
+                            </div>
+                            <div class="nav-drop-panel-item">
+                                <a href="#"><img src="img/Navbar/Samsung.png" style="width: 133px !important;" alt="" class="nav-drop-panel-brand"></a>
+                            </div>
+                            <div class="nav-drop-panel-item">
+                                <a href="#"><img src="img/Navbar/Dell.png" style="width: 83px !important;" alt="" class="nav-drop-panel-brand"></a>
+                            </div>
+                            <div class="nav-drop-panel-item">
+                                <a href="#"><img src="img/Navbar/Acer.png" style="width: 94px !important;" alt="" class="nav-drop-panel-brand"></a>
+                            </div>
+                            <div class="nav-drop-panel-item">
+                                <a href="#"><img src="img/Navbar/hp.png" style="width: 39px !important;" alt="" class="nav-drop-panel-brand"></a>
+                            </div>
+                            <div class="nav-drop-panel-item">
+                                <a href="#"><img src="img/Navbar/Lenovo.png" style="width: 101px !important;" alt="" class="nav-drop-panel-brand"></a>
+                            </div>
+                            <div class="nav-drop-panel-item">
+                                <a href="#"><img src="img/Navbar/Asus.png" style="width: 106px !important;" alt="" class="nav-drop-panel-brand"></a>
+                            </div>
+                            <div class="nav-carousel-arrow-place nav-drop-panel-border-radius-end"></div>
+                        </div>
+                    </div>
+                    <li class="sn-item sn-tablet-item">
+                        <a href="#" class="sn-link p-36"> Планшеты</a>
+                        <img src="img/Navbar/Sn-drop-button.png" alt="" class="sn-drop-button">
+                    </li>
+                    <div class="nav-drop-panel nav-tablets-drop">
+                        <div class="nav-drop-panel-content">
+                            <div class="nav-drop-panel-item nav-drop-panel-border-radius-start">
+                                <a href="#"><img src="img/Navbar/Apple.png" style="width: 32px !important;" alt="" class="nav-drop-panel-brand"></a>
+                            </div>
+                            <div class="nav-drop-panel-item">
+                                <a href="#"><img src="img/Navbar/Samsung.png" style="width: 133px !important;" alt="" class="nav-drop-panel-brand"></a>
+                            </div>
+                            <div class="nav-drop-panel-item">
+                                <a href="#"><img src="img/Navbar/Dell.png" style="width: 83px !important;" alt="" class="nav-drop-panel-brand"></a>
+                            </div>
+                            <div class="nav-drop-panel-item">
+                                <a href="#"><img src="img/Navbar/Acer.png" style="width: 94px !important;" alt="" class="nav-drop-panel-brand"></a>
+                            </div>
+                            <div class="nav-drop-panel-item">
+                                <a href="#"><img src="img/Navbar/hp.png" style="width: 39px !important;" alt="" class="nav-drop-panel-brand"></a>
+                            </div>
+                            <div class="nav-drop-panel-item">
+                                <a href="#"><img src="img/Navbar/Lenovo.png" style="width: 101px !important;" alt="" class="nav-drop-panel-brand"></a>
+                            </div>
+                            <div class="nav-drop-panel-item">
+                                <a href="#"><img src="img/Navbar/Asus.png" style="width: 106px !important;" alt="" class="nav-drop-panel-brand"></a>
+                            </div>
+                            <div class="nav-carousel-arrow-place nav-drop-panel-border-radius-end"></div>
+                        </div>
+                    </div>
+                    <li class="sn-item">
+                        <a href="shares.html" class="sn-link p-19"> Акции</a>
+                    </li>
+                    <li class="sn-item">
+                        <a href="#" class="sn-link p-19"> Информация о доставке</a>
+                    </li>
+                    <li class="sn-item br-none">
+                        <a href="support-guarantee.html" class="sn-link p-40"> Поддержка и гарантии</a>
+                    </li>
+                    <li class="sn-bag-item">
+                        <img src="img/Navbar/Bag.png" alt="" class="bag">
+                        <a href="#" class="sn-link black fw-600"> Корзина</a>
+                        <div class="bag-counter"> 1</div>
+                    </li>
+                </ul>            
+            </div>
+        </nav>
+    
+        <div class="breadcrumber container">
+            <div class="flex">
+                <a href="index.html" class="breadcrumber-home-link"> Главная</a>
+                <span class="breadcrumber-slash"> /</span>
+                <a href="#" class="breadcrumber-smartphones-link mr-7"> Корзина</a>
+                <span class="breadcrumber-slash"> /</span>
+                <a href="#" class="breadcrumber-smartphones-link"> Оформить покупку</a>
+            </div>
+        </div>
+    
+        <form action="" class="personal-data container">
+            <div class="flex">
+                <div class="personal-data-content">
+                    <div class="phones-case-heading-wrapper mt-38 container">
+                        <div class="phone-case-heading lh-150 fw-bold">
+                            Оформить покупку
+                        </div>
+                    </div>
+                    <div class="personal-data-first-phase">
+                        <div class="personal-data-first-phase-heading fw-bold"> Личные данные</div>
+                        <div class="personal-data-line"></div>
+                        <div class="flex mt-21">
+                            <div class="column">
+                                <div class="name-input-wrapper column">
+                                    <label for="name-input" class="personal-data-first-phase-label">
+                                        <span class="red">*</span>
+                                        Имя:
+                                    </label>
+                                    <input type="text" id="name-input" class="personal-data-first-phase-input">
+                                </div>
+                                <div class="email-input-wrapper column mt-19">
+                                    <label for="email-input" class="personal-data-first-phase-label">
+                                        <span class="red">*</span>
+                                        E-Mail:
+                                    </label>
+                                    <input type="email" id="email-input" class="personal-data-first-phase-input">
+                                </div>
+                            </div>
+                            <div class="column ml-30">
+                                <div class="surname-input-wrapper column">
+                                    <label for="surname-input" class="personal-data-first-phase-label">
+                                        <span class="red">*</span>
+                                        Фамилия:
+                                    </label>
+                                    <input type="text" id="surname-input" class="personal-data-first-phase-input">
+                                </div>
+                                <div class="tel-input-wrapper column mt-19">
+                                    <label for="tel-input" class="personal-data-first-phase-label">
+                                        <span class="red">*</span>
+                                        Телефон:
+                                    </label>
+                                    <input type="tel" id="tel-input" class="personal-data-first-phase-input">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="personal-data-second-phase">
+                        <div class="personal-data-first-phase-heading fw-bold"> Адрес:</div>
+                        <div class="personal-data-line"></div>
+                        <div class="column mt-26">
+                            <div class="country-input-wrapper column">
+                                <label for="country-input" class="personal-data-first-phase-label">
+                                    <span class="red">*</span>
+                                    Страна:
+                                </label>
+                                <select name="country-input" id="country-input">
+                                    <option value="Узбекитсан" class="country-input-option"> Узбекитсан</option>
+                                    <option value="Россия" class="country-input-option"> Россия</option>
+                                    <option value="Казахстан" class="country-input-option"> Казахстан</option>
+                                </select>
+                            </div>
+                            <div class="region-input-wrapper column mt-19">
+                                <label for="region-input" class="personal-data-first-phase-label">
+                                    <span class="red">*</span>
+                                    Регион / Область:
+                                </label>
+                                <select name="region-input" id="region-input">
+                                    <option value="Ташкент" class="region-input-option"> Ташкент</option>
+                                    <option value="Самарканд" class="region-input-option"> Самарканд</option>
+                                    <option value="Бухара" class="region-input-option"> Бухара</option>
+                                    <option value="Хорезм" class="region-input-option"> Хорезм</option>
+                                    <option value="Андижан" class="region-input-option"> Андижан</option>
+                                </select>
+                            </div>
+                            <div class="city-input-wrapper column mt-19">
+                                <label for="city-input" class="personal-data-first-phase-label">
+                                    <span class="red">*</span>
+                                    Город:
+                                </label>
+                                <input type="text" id="city-input" class="personal-data-second-phase-input">
+                            </div>
+                            <div class="index-input-wrapper column mt-19">
+                                <label for="index-input" class="personal-data-first-phase-label">
+                                    <span class="red">*</span>
+                                    Индекс:
+                                </label>
+                                <input type="text" id="index-input" class="personal-data-second-phase-input">
+                            </div>
+                            <div class="address-input-wrapper column mt-19">
+                                <label for="address-input" class="personal-data-first-phase-label">
+                                    <span class="red">*</span>
+                                    Адрес:
+                                </label>
+                                <input type="text" id="address-input" class="personal-data-second-phase-input">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="your-purchases">
+                    <div class="your-purchases-content">
+                        <div class="your-purchases-heading-wrapper">
+                            <div class="your-purchases-heading fw-bold"> Ваши покупки</div>
+                            <div class="your-purchases-line"></div>
+                        </div>
+                        <ul class="your-purchases-list">
+                            <li class="your-purchases-item">
+                                <div class="your-purchases-item-image-wrapper">
+                                    <img src="img/Checkout/Item-image.jpg" alt="" class="your-purchases-item-image">
+                                </div>
+                                <div class="your-purchases-item-text">
+                                    <div class="your-purchases-item-main-text fw-bold"> Кожаный чехол для планшета Samsung Galaxy Tab</div>
+                                    <div class="your-purchases-item-mini-text"> 1 x 650 000 сум</div>
+                                </div>
+                            </li>
+                            <div class="your-purchases-line"></div>
+                            <li class="your-purchases-item">
+                                <div class="your-purchases-item-image-wrapper">
+                                    <img src="img/Checkout/Item-image.jpg" alt="" class="your-purchases-item-image">
+                                </div>
+                                <div class="your-purchases-item-text">
+                                    <div class="your-purchases-item-main-text fw-bold"> Кожаный чехол для планшета Samsung Galaxy Tab</div>
+                                    <div class="your-purchases-item-mini-text"> 1 x 45 000 сум</div>
+                                </div>
+                            </li>
+                            <div class="your-purchases-line"></div>
+                            <li class="your-purchases-item">
+                                <div class="your-purchases-item-image-wrapper">
+                                    <img src="img/Checkout/Item-image.jpg" alt="" class="your-purchases-item-image">
+                                </div>
+                                <div class="your-purchases-item-text">
+                                    <div class="your-purchases-item-main-text fw-bold"> Кожаный чехол для планшета Samsung Galaxy Tab</div>
+                                    <div class="your-purchases-item-mini-text"> 2 x 60 000 сум</div>
+                                </div>
+                            </li>
+                            <div class="your-purchases-line"></div>
+                        </ul>
+                        <div class="your-purchases-order-wrapper">
+                            <div class="your-purchase-order-amount-wrapper">
+                                <div class="your-purchase-order-amount-text"> Обшая сумма:</div>
+                                <div class="your-purchase-order-amount-numbers fw-bold"> 775 000 сум</div>
+                            </div>
+                            <div class="your-purchases-line"></div>
+                            <div class="your-purchase-order-button-wrapper">
+                                <div class="your-purchase-order-checkbox-wrapper">
+                                    <input type="checkbox" id="your-purchase-order-checkbox">
+                                    <label for="your-purchase-order-checkbox" class="pl-26 your-purchase-order-checkbox-label">
+                                        Я согласен (а) на обработку
+                                        <span class="red"> персональных данных</span>
+                                    </label>
+                                </div>
+                                <div class="your-purchase-order-button-item">
+                                    <button type="submit" class="your-purchase-order-button">
+                                        <span class="z-2"> Оформить заказ</span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </form> 
+    
+        <div class="tips mt-242 container">
+            <div class="tips-content">
+                <div class="tips-item border-radius-left tips-1-padding">
+                    <div class="tips-number fw-bold"> 01</div>
+                    <div class="tips-heading fw-bold"> Оставте заявку на товар</div>
+                    <div class="tips-text"> Выберите товар, добавьте в корзину и оставьте заявку</div>
+                </div>
+                <div class="tips-item white-bg tips-2-padding">
+                    <div class="tips-number fw-bold"> 02</div>
+                    <div class="tips-heading mt-17 fw-bold"> Наш оператор перезвонит</div>
+                    <div class="tips-text"> Наш менеджер перезвонит Вам что бы уточнить детали доставки</div>
+                </div>
+                <div class="tips-item tips-3-padding">
+                    <div class="tips-number fw-bold"> 03</div>
+                    <div class="tips-heading mt-17 fw-bold"> Делаете оплату</div>
+                    <div class="tips-text"> Менеджер отправит Вам счет и Вы оплачиваете товар</div>
+                </div>
+                <div class="tips-item white-bg border-radius-right tips-4-padding">
+                    <div class="tips-number ml-0 fw-bold"> 04</div>
+                    <div class="tips-heading ml-6 mt-17 fw-bold"> Мы отправляем</div>
+                    <div class="tips-text ml-6"> Отправляем доставкой до вашего дома</div>
+                </div>
+            </div>
+        </div>
+    
+        <footer class="footer mt-242">
+            <div class="footer-content container">
+                <div class="footer-logo-and-social-media">
+                    <div class="footer-logo-wrapper">
+                        <a href="index.html"><img src="img/Navbar/Logo.png" alt="" class="footer-company-logo"></a>
+                    </div>
+                    <div class="social-media">
+                        <img src="img/Foooter/Telegram.png" alt="" class="footer-logo">
+                        <img src="img/Foooter/Facebook.png" alt="" class="footer-logo">
+                        <img src="img/Foooter/Instagram.png" alt="" class="footer-logo mr-0">
+                    </div>
+                </div>
+                <div class="footer-nav">
+                    <ul class="footer-list-1">
+                        <li class="footer-nav-item"><a href="#" class="footer-nav-link"> Смартфоны</a></li>
+                        <li class="footer-nav-item"><a href="#" class="footer-nav-link"> Ноутбуки</a></li>
+                        <li class="footer-nav-item mb-0"><a href="#" class="footer-nav-link"> Планшеты</a></li>
+                    </ul>
+                    <ul class="footer-list-2">
+                        <li class="footer-nav-item"><a href="#" class="footer-nav-link"> Акции</a></li>
+                        <li class="footer-nav-item"><a href="#" class="footer-nav-link"> Информация о доставке</a></li>
+                        <li class="footer-nav-item mb-0"><a href="#" class="footer-nav-link"> Поддержка и гарантии</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <div class="footer-number-wrapper">
+                        <div class="footer-phone-logo-wrapper">
+                            <img src="img/Navbar/Phone.png" alt="" class="footer-phone-logo">
+                        </div>
+                        <div class="footer-phone-texts">
+                            <div class="footer-phone-time"> 09:00 - 20:00</div>
+                            <div class="footer-phone-number fz-15"> +998 (00) 000-00-00</div>
+                        </div>
+                    </div>
+                    <div class="footer-link-wrapper">
+                        <a href="#" class="link footer-number-link-padding">
+                            <span class="z-2"> Заказать звонок</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="all-rights-reserved mini-extended-container">
+                <div class="all-rights-reserved-text"> 3nuqta © 2020. Все права защищены</div>
+            </div>
+        </footer>
+    </div>
+
+
+
+    <!-- Vendor Scripts -->
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="owl carousel/home-page/owl.carousel.min.js"></script>
+
+    <!-- User Scripts -->
+    <script src="js/main.js"></script>
+    
+</body>
+</html>
