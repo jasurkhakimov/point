@@ -7,6 +7,7 @@
 
     <!-- Css -->
     <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/checkbox-style.css">
 
     <!-- User Css -->
     <link rel="stylesheet" href="css/style.css">
@@ -233,16 +234,16 @@
             <div class="flex">
                 <a href="index.html" class="breadcrumber-home-link"> Главная</a>
                 <span class="breadcrumber-slash gray"> /</span>
-                <a href="smartphones.html" class="breadcrumber-home-link ml-7"> Смартфоны</a>
-                <span class="breadcrumber-slash"> /</span>
-                <a href="#" class="breadcrumber-smartphones-link"> Samsung</a>
+                <a href="smartphones.html" class="breadcrumber-smartphones-link ml-7"> Смартфоны</a>
+                <!-- <span class="breadcrumber-slash"> /</span>
+                <a href="#" class="breadcrumber-smartphones-link"> Samsung</a> -->
             </div>
         </div>
     
         <div class="phones-case-heading-wrapper container">
             <div class="phone-case-heading fw-bold">
                 Чехлы для смартфонов
-                <span class="red"> Samsung</span>
+                <!-- <span class="red"> Samsung</span> -->
             </div>
         </div>
     
@@ -260,42 +261,72 @@
                         <div class="smartphones-filter-dropdown-producer-content">
                             <div class="smartphones-filter-dropdown-producer-item mb-10">
                                 <div class="smartphones-filter-dropdown-producer-image-item active mr-10">
-                                    <img src="img/Smartphones/Samsung.png" alt="" class="smartphones-filter-dropdown-producer-image">
+                                    <label for="smartphones-filter-label-samsung">
+                                        <img src="img/Smartphones/Samsung.png" alt="" class="smartphones-filter-dropdown-producer-image">
+                                    </label>
+                                    <input type="hidden" id="smartphones-filter-label-samsung">
                                 </div>
                                 <div class="smartphones-filter-dropdown-producer-image-item">
-                                    <img src="img/Smartphones/Lenovo.png" alt="" class="smartphones-filter-dropdown-producer-image">
+                                    <label for="smartphones-filter-label-lenovo">
+                                        <img src="img/Smartphones/Lenovo.png" alt="" class="smartphones-filter-dropdown-producer-image">
+                                    </label>
+                                    <input type="hidden" id="smartphones-filter-label-lenovo">
                                 </div>
                             </div>
                             <div class="smartphones-filter-dropdown-producer-item mb-10">
                                 <div class="smartphones-filter-dropdown-producer-image-item mr-10">
-                                    <img src="img/Smartphones/Huawei.png" alt="" class="smartphones-filter-dropdown-producer-image">
+                                    <label for="smartphones-filter-label-huawei">
+                                        <img src="img/Smartphones/Huawei.png" alt="" class="smartphones-filter-dropdown-producer-image">
+                                    </label>
+                                    <input type="hidden" id="smartphones-filter-label-huawei">
                                 </div>
                                 <div class="smartphones-filter-dropdown-producer-image-item">
-                                    <img src="img/Smartphones/Vivo.png" alt="" class="smartphones-filter-dropdown-producer-image">
+                                    <label for="smartphones-filter-label-vivo">
+                                        <img src="img/Smartphones/Vivo.png" alt="" class="smartphones-filter-dropdown-producer-image">
+                                    </label>
+                                    <input type="hidden" id="smartphones-filter-label-vivo">
                                 </div>
                             </div>
                             <div class="smartphones-filter-dropdown-producer-item mb-10">
                                 <div class="smartphones-filter-dropdown-producer-image-item mr-10">
-                                    <img src="img/Smartphones/Xiaomi.png" alt="" class="smartphones-filter-dropdown-producer-image">
+                                    <label for="smartphones-filter-label-xiaomi">
+                                        <img src="img/Smartphones/Xiaomi.png" alt="" class="smartphones-filter-dropdown-producer-image">
+                                    </label>
+                                    <input type="hidden" id="smartphones-filter-label-xiaomi">
                                 </div>
                                 <div class="smartphones-filter-dropdown-producer-image-item">
-                                    <img src="img/Smartphones/Meizu.png" alt="" class="smartphones-filter-dropdown-producer-image">
+                                    <label for="smartphones-filter-label-meizu">
+                                        <img src="img/Smartphones/Meizu.png" alt="" class="smartphones-filter-dropdown-producer-image">
+                                    </label>
+                                    <input type="hidden" id="smartphones-filter-label-meizu">
                                 </div>
                             </div>
                             <div class="smartphones-filter-dropdown-producer-item mb-10">
                                 <div class="smartphones-filter-dropdown-producer-image-item mr-10">
-                                    <img src="img/Smartphones/Apple.png" alt="" class="smartphones-filter-dropdown-producer-image">
+                                    <label for="smartphones-filter-label-apple">
+                                        <img src="img/Smartphones/Apple.png" alt="" class="smartphones-filter-dropdown-producer-image">
+                                    </label>
+                                    <input type="hidden" id="smartphones-filter-label-apple">
                                 </div>
                                 <div class="smartphones-filter-dropdown-producer-image-item">
-                                    <img src="img/Smartphones/Lg.png" alt="" class="smartphones-filter-dropdown-producer-image">
+                                    <label for="smartphones-filter-label-lg">
+                                        <img src="img/Smartphones/Lg.png" alt="" class="smartphones-filter-dropdown-producer-image">
+                                    </label>
+                                    <input type="hidden" id="smartphones-filter-label-lg">
                                 </div>
                             </div>
                             <div class="smartphones-filter-dropdown-producer-item">
                                 <div class="smartphones-filter-dropdown-producer-image-item mr-10">
-                                    <img src="img/Smartphones/Nokia.png" alt="" class="smartphones-filter-dropdown-producer-image">
+                                    <label for="smartphones-filter-label-nokia">
+                                        <img src="img/Smartphones/Nokia.png" alt="" class="smartphones-filter-dropdown-producer-image">
+                                    </label>
+                                    <input type="hidden" id="smartphones-filter-label-nokia">
                                 </div>
                                 <div class="smartphones-filter-dropdown-producer-image-item">
-                                    <img src="img/Smartphones/Ulefone.png" alt="" class="smartphones-filter-dropdown-producer-image">
+                                    <label for="smartphones-filter-label-ulefone">
+                                        <img src="img/Smartphones/Ulefone.png" alt="" class="smartphones-filter-dropdown-producer-image">
+                                    </label>
+                                    <input type="hidden" id="smartphones-filter-label-ulefone">
                                 </div>
                             </div>
                         </div>
@@ -305,63 +336,66 @@
                         <div><img src="img/Smartphones/Arrow.png" alt="" class="smartphones-filter-item-arrow"></div>
                     </div>
                     <div class="smartphones-filter-dropdown-model">
-                        <div class="smartphones-filter-dropdown-model-content">
-                            <div class="smartphones-filter-dropdown-model-item">
-                                <input type="radio" class="smartphones-filter-dropdown-model-input">
-                                <div class="smartphones-filter-dropdown-model-text"> Galaxy A50</div>
+                        <div class="flex">
+                            <div class="smartphones-filter-dropdown-model-content">
+                                <div class="smartphones-filter-dropdown-model-item">
+                                    <input type="checkbox" id="smartphones-filter-dropdown-model-input-1" class="smartphones-filter-dropdown-model-input">
+                                    <label for="smartphones-filter-dropdown-model-input-1" class="smartphones-filter-dropdown-model-text"> Galaxy A50</label>
+                                </div>
+                                <div class="smartphones-filter-dropdown-model-item">
+                                    <input type="checkbox" id="smartphones-filter-dropdown-model-input-2" class="smartphones-filter-dropdown-model-input">
+                                    <label for="smartphones-filter-dropdown-model-input-2" class="smartphones-filter-dropdown-model-text"> Galaxy A50</label>
+                                </div>
+                                <div class="smartphones-filter-dropdown-model-item">
+                                    <input type="checkbox" id="smartphones-filter-dropdown-model-input-3" class="smartphones-filter-dropdown-model-input">
+                                    <label for="smartphones-filter-dropdown-model-input-3" class="smartphones-filter-dropdown-model-text"> Galaxy A50</label>
+                                </div>
+                                <div class="smartphones-filter-dropdown-model-item">
+                                    <input type="checkbox" id="smartphones-filter-dropdown-model-input-3" class="smartphones-filter-dropdown-model-input">
+                                    <label for="smartphones-filter-dropdown-model-input-3" class="smartphones-filter-dropdown-model-text"> Galaxy A50</label>
+                                </div>
+                                <div class="smartphones-filter-dropdown-model-item">
+                                    <input type="checkbox" id="smartphones-filter-dropdown-model-input-4" class="smartphones-filter-dropdown-model-input">
+                                    <label for="smartphones-filter-dropdown-model-input-4" class="smartphones-filter-dropdown-model-text"> Galaxy A50</label>
+                                </div>
+                                <div class="smartphones-filter-dropdown-model-item">
+                                    <input type="checkbox" id="smartphones-filter-dropdown-model-input-5" class="smartphones-filter-dropdown-model-input">
+                                    <label for="smartphones-filter-dropdown-model-input-5" class="smartphones-filter-dropdown-model-text"> Galaxy A50</label>
+                                </div>
+                                <div class="smartphones-filter-dropdown-model-item">
+                                    <input type="checkbox" id="smartphones-filter-dropdown-model-input-6" class="smartphones-filter-dropdown-model-input">
+                                    <label for="smartphones-filter-dropdown-model-input-6" class="smartphones-filter-dropdown-model-text"> Galaxy A50</label>
+                                </div>
+                                <div class="smartphones-filter-dropdown-model-item">
+                                    <input type="checkbox" id="smartphones-filter-dropdown-model-input-7" class="smartphones-filter-dropdown-model-input">
+                                    <label for="smartphones-filter-dropdown-model-input-7" class="smartphones-filter-dropdown-model-text"> Galaxy A50</label>
+                                </div>
+                                <div class="smartphones-filter-dropdown-model-item">
+                                    <input type="checkbox" id="smartphones-filter-dropdown-model-input-8" class="smartphones-filter-dropdown-model-input">
+                                    <label for="smartphones-filter-dropdown-model-input-8" class="smartphones-filter-dropdown-model-text"> Galaxy A50</label>
+                                </div>
+                                <div class="smartphones-filter-dropdown-model-item">
+                                    <input type="checkbox" id="smartphones-filter-dropdown-model-input-9" class="smartphones-filter-dropdown-model-input">
+                                    <label for="smartphones-filter-dropdown-model-input-9" class="smartphones-filter-dropdown-model-text"> Galaxy A50</label>
+                                </div>
+                                <div class="smartphones-filter-dropdown-model-item">
+                                    <input type="checkbox" id="smartphones-filter-dropdown-model-input-10" class="smartphones-filter-dropdown-model-input">
+                                    <label for="smartphones-filter-dropdown-model-input-10" class="smartphones-filter-dropdown-model-text"> Galaxy A50</label>
+                                </div>
+                                <div class="smartphones-filter-dropdown-model-item">
+                                    <input type="checkbox" id="smartphones-filter-dropdown-model-input-11" class="smartphones-filter-dropdown-model-input">
+                                    <label for="smartphones-filter-dropdown-model-input-11" class="smartphones-filter-dropdown-model-text"> Galaxy A50</label>
+                                </div>
+                                <div class="smartphones-filter-dropdown-model-item">
+                                    <input type="checkbox" id="smartphones-filter-dropdown-model-input-12" class="smartphones-filter-dropdown-model-input">
+                                    <label for="smartphones-filter-dropdown-model-input-12" class="smartphones-filter-dropdown-model-text"> Galaxy A50</label>
+                                </div>
+                                <div class="smartphones-filter-dropdown-model-item">
+                                    <input type="checkbox" id="smartphones-filter-dropdown-model-input-13" class="smartphones-filter-dropdown-model-input">
+                                    <label for="smartphones-filter-dropdown-model-input-13" class="smartphones-filter-dropdown-model-text"> Galaxy A50</label>
+                                </div>
                             </div>
-                            <div class="smartphones-filter-dropdown-model-item">
-                                <input type="radio" class="smartphones-filter-dropdown-model-input">
-                                <div class="smartphones-filter-dropdown-model-text"> Galaxy A50</div>
-                            </div>
-                            <div class="smartphones-filter-dropdown-model-item">
-                                <input type="radio" class="smartphones-filter-dropdown-model-input">
-                                <div class="smartphones-filter-dropdown-model-text"> Galaxy A50</div>
-                            </div>
-                            <div class="smartphones-filter-dropdown-model-item">
-                                <input type="radio" class="smartphones-filter-dropdown-model-input">
-                                <div class="smartphones-filter-dropdown-model-text"> Galaxy A50</div>
-                            </div>
-                            <div class="smartphones-filter-dropdown-model-item">
-                                <input type="radio" class="smartphones-filter-dropdown-model-input">
-                                <div class="smartphones-filter-dropdown-model-text"> Galaxy A50</div>
-                            </div>
-                            <div class="smartphones-filter-dropdown-model-item">
-                                <input type="radio" class="smartphones-filter-dropdown-model-input">
-                                <div class="smartphones-filter-dropdown-model-text"> Galaxy A50</div>
-                            </div>
-                            <div class="smartphones-filter-dropdown-model-item">
-                                <input type="radio" class="smartphones-filter-dropdown-model-input">
-                                <div class="smartphones-filter-dropdown-model-text"> Galaxy A50</div>
-                            </div>
-                            <div class="smartphones-filter-dropdown-model-item">
-                                <input type="radio" class="smartphones-filter-dropdown-model-input">
-                                <div class="smartphones-filter-dropdown-model-text"> Galaxy A50</div>
-                            </div>
-                            <div class="smartphones-filter-dropdown-model-item">
-                                <input type="radio" class="smartphones-filter-dropdown-model-input">
-                                <div class="smartphones-filter-dropdown-model-text"> Galaxy A50</div>
-                            </div>
-                            <div class="smartphones-filter-dropdown-model-item">
-                                <input type="radio" class="smartphones-filter-dropdown-model-input">
-                                <div class="smartphones-filter-dropdown-model-text"> Galaxy A50</div>
-                            </div>
-                            <div class="smartphones-filter-dropdown-model-item">
-                                <input type="radio" class="smartphones-filter-dropdown-model-input">
-                                <div class="smartphones-filter-dropdown-model-text"> Galaxy A50</div>
-                            </div>
-                            <div class="smartphones-filter-dropdown-model-item">
-                                <input type="radio" class="smartphones-filter-dropdown-model-input">
-                                <div class="smartphones-filter-dropdown-model-text"> Galaxy A50</div>
-                            </div>
-                            <div class="smartphones-filter-dropdown-model-item">
-                                <input type="radio" class="smartphones-filter-dropdown-model-input">
-                                <div class="smartphones-filter-dropdown-model-text"> Galaxy A50</div>
-                            </div>
-                            <div class="smartphones-filter-dropdown-model-item">
-                                <input type="radio" class="smartphones-filter-dropdown-model-input">
-                                <div class="smartphones-filter-dropdown-model-text"> Galaxy A50</div>
-                            </div>
+                            <div class="smartphones-filter-scrollbar-margin"></div>
                         </div>
                     </div>
                     <div class="smartphones-filter-item smartphones-item-price">
@@ -370,9 +404,9 @@
                     </div>
                     <div class="smartphones-filter-dropdown-price">
                         <div class="smartphones-filter-dropdown-price-content">
-                            <div class="smartphones-filter-dropdown-price-item"><input type="text" min="0" class="smartphones-filter-dropdown-price-input"></div>
+                            <div class="smartphones-filter-dropdown-price-item"><input type="number" min="0" class="smartphones-filter-dropdown-price-input"></div>
                             <div class="smartphones-filter-dropdown-price-item-mini"> -</div>
-                            <div class="smartphones-filter-dropdown-price-item"> <input type="text" min="0" class="smartphones-filter-dropdown-price-input"></div>
+                            <div class="smartphones-filter-dropdown-price-item"> <input type="number" min="0" class="smartphones-filter-dropdown-price-input"></div>
                         </div>
                     </div>
                     <div class="smartphones-filter-buttons-wrapper">
@@ -1154,6 +1188,7 @@
     <!-- Vendor Scripts -->
     <script src="js/jquery-3.5.1.min.js"></script>
     <script src="owl carousel/home-page/owl.carousel.min.js"></script>
+    <script src="js/swiper-bundle.min.js"></script>
 
     <!-- User Scripts -->
     <script src="js/main.js"></script>
