@@ -137,9 +137,10 @@
   /*
   --swiper-navigation-color: var(--swiper-theme-color);
   */
-}
+} 
 .swiper-button-prev,
 .swiper-button-next {
+  position: relative;
   width: 40px;
   height: 40px;
   background: #303030;
@@ -169,6 +170,28 @@
   align-items: center;
   justify-content: center;
   color: #111111;
+}
+.swiper-container-mobile-1 .swiper-button-prev,
+.swiper-container-mobile-1 .swiper-button-next {
+  width: 30px;
+  height: 60px;
+  background: white;
+}
+.swiper-container-mobile-1 .swiper-button-prev {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  margin: auto 0;
+  border-radius: 0 48px 48px 0;
+}
+.swiper-container-mobile-1 .swiper-button-next {
+  position: absolute;
+  top: 0;
+  right: 0 !important;
+  bottom: 0;
+  margin: auto 0;
+  border-radius: 48px 0 0 48px;
 }
 .swiper-container .swiper-button-prev {
   position: absolute;
@@ -254,6 +277,10 @@
 .swiper-container-rtl .swiper-button-next:after {
   content: 'prev';
 }
+.swiper-container-mobile-1 .swiper-button-prev:after,
+.swiper-container-mobile-1 .swiper-container-rtl .swiper-button-next:after {
+  content: '';
+}
 .swiper-button-next,
 .swiper-container-rtl .swiper-button-prev {
   right: 10px;
@@ -262,6 +289,10 @@
 .swiper-button-next:after,
 .swiper-container-rtl .swiper-button-prev:after {
   content: 'next';
+}
+.swiper-container-mobile-1 .swiper-button-next:after,
+.swiper-container-mobile-1 .swiper-container-rtl .swiper-button-prev:after {
+  content: '';
 }
 .swiper-button-prev.swiper-button-white,
 .swiper-button-next.swiper-button-white {
@@ -273,6 +304,40 @@
 }
 .swiper-button-lock {
   display: none;
+}
+.swiper-arrow-next {
+  position: absolute;
+  top: 0;
+  right: 3px;
+  bottom: 0;
+  margin: auto 0;
+}
+@media (min-width: 576px) {
+  .swiper-arrow-next {
+    display: none;
+    position: absolute;
+    top: 0;
+    right: 3px;
+    bottom: 0;
+    margin: auto 0;
+  }
+}
+.swiper-arrow-prev {
+  position: absolute;
+  top: 0;
+  left: 3px;
+  bottom: 0;
+  margin: auto 0;
+}
+@media (min-width: 576px) {
+  .swiper-arrow-prev {
+    display: none;
+    position: absolute;
+    top: 0;
+    right: 3px;
+    bottom: 0;
+    margin: auto 0;
+  }
 }
 :root {
   /*
