@@ -151,6 +151,10 @@ ul {
     margin-top: 4px;
 }
 
+.mt-5 {
+    margin-top: 5px;
+}
+
 /* Navbar */
 
 /* .decor-left-1 {
@@ -518,7 +522,7 @@ ul {
     z-index: 3;
     margin: 0 auto;
     width: 1170px;
-    padding-right: 84px;
+    padding-right: 30px;
     height: 62px;
     background: var(--white);
     border-radius: 0 0 10px 10px;
@@ -687,6 +691,60 @@ ul {
     margin-top: 30px;
 }
 
+.carousel-item {
+    position: relative;
+}
+
+.carousel-content {
+    display: block;
+    position: absolute;
+    top: 100px;
+    left: 100px;
+}
+
+.carousel-content.turn-off {
+    display: none;
+}
+
+.carousel-main-text {
+    text-transform: uppercase;
+    display: block;
+    font-size: 72px;
+    color: var(--white);
+}
+
+.carousel-mini-text {
+    width: 390px;
+    display: block;
+    font-size: 28px;
+    line-height: 38px;
+    color: var(--white);
+}
+
+.carousel-link-wrapper {
+    margin-top: 124px;
+}
+
+.carousel-link {
+    color: var(--white);
+    margin-top: 101px;
+    padding: 20px 62px;
+    font-size: 22px;
+    border-radius: 10px;
+    background: transparent;
+    border: 3px solid #fff;
+    transition: all .2s ease-in-out;
+}
+
+.carousel-link:hover {
+    color: var(--black);
+    background: #fff;
+}
+
+.carousel-pink {
+    color: rgb(255, 0, 255);
+}
+
 .carousel-image {
     width: 1170px;
     height: 450px;
@@ -765,6 +823,7 @@ ul {
 }
 
 .novetly-card {
+    display: block;
     width: 270px;
     cursor: pointer;
     background: #292929;
@@ -932,10 +991,16 @@ ul {
     z-index: 1;
 }
 
-.novetly-availability-bag, .novetly-availability-check-mark {
+.novetly-availability-bag, .novetly-availability-check-mark, .secondary-product-button {
     display: none;
     position: relative;
     z-index: 2;
+}
+
+.secondary-product-button-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .novetly-availability-bag {
@@ -946,7 +1011,7 @@ ul {
     padding: 18px 14px 18px 18px;
 }
 
-.novetly-availability-bag.active, .novetly-availability-check-mark.active {
+.novetly-availability-bag.active, .novetly-availability-check-mark.active, .secondary-product-button.active {
     display: block;
 }
 
@@ -1268,13 +1333,28 @@ ul {
 
 /* Footer */
 
-.footer {
-    margin-top: 180px;
-    height: 469px;
-    background-image: url(../img/Website-background/Wave.png);
-    background-repeat: no-repeat;
-    background-size: 1959px 547px;
-    background-position: center bottom;
+@media (max-width: 1366px) {
+    .footer {
+        margin-top: 180px;
+        height: 469px;
+        background: var(--background);
+        background-image: url(../img/Website-background/Wave.png);
+        background-repeat: no-repeat;
+        background-size: 1959px 547px;
+        background-position: center bottom;
+    }
+}
+
+@media (min-width: 1367px) {
+    .footer {
+        margin-top: 180px;
+        height: 469px;
+        background: var(--background);
+        background-image: url(../img/Website-background/Wave.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center 210px;
+    }
 }
 
 .footer-logo:nth-child(3) {
@@ -1535,6 +1615,7 @@ ul {
 }
 
 .smartphones-filter-button {
+    font-family: Montserrat;
     color: var(--white);
     font-size: 15px;
     line-height: 150%;
@@ -1683,9 +1764,14 @@ ul {
     color: #FFF;
 }
 
-.smartphones-filter-dropdown-price-input::-webkit-outer-spin-button {
+.smartphones-filter-dropdown-price-input::-webkit-outer-spin-button,
+.smartphones-filter-dropdown-price-input::-webkit-inner-spin-button {
     -webkit-appearance: none;
     margin: 0;
+}
+
+.smartphones-filter-dropdown-price-input[type=number] {
+    -moz-appearance: textfield;
 }
 
 .smartphones-filter-dropdown-price-item-mini {
@@ -1856,6 +1942,11 @@ ul {
     width: 50px;
     height: 50px;
     background: #303030;
+    transition: background .1s ease-in-out;
+}
+
+.page-switcher-arrow-item:hover {
+    background: var(--red);
 }
 
 .page-switcher-border-radius-right {
@@ -2507,14 +2598,30 @@ ul {
     border-radius: 5px;
     font-size: 15px;
     line-height: 150%;
-    padding: 13px 22px 14px 19px;
+    height: 50px;
     margin-left: 16px;
     transition: all .1s ease-in-out;
+}
+
+.product-lower-form-add-to-bag-padding-1 {
+    padding: 13px 0 14px 19px;
+}
+
+.product-lower-form-add-to-bag-padding-2 {
+    padding: 17px 22px 10px 19px;
 }
 
 .product-lower-form-add-to-bag:hover {
     background: var(--red);
     color: var(--white);
+}
+
+.classic {
+    display: none;
+}
+
+.classic.active {
+    display: block;
 }
 
 .product-lower-form-bag-image {
@@ -2785,7 +2892,7 @@ input[type="checkbox"] {
 }
 
 .bag-page-middle-card-price-text {
-    font-size: 25px;
+    font-size: 23px;
     line-height: 30px;
     color: #FFFFFF;
 }
@@ -3136,11 +3243,13 @@ input[type="checkbox"] {
 .focus.active {
     background: rgba(0, 0, 0, 0.6);
     filter: blur(5px);
+    position: relative;
+    z-index: -1000;
 }
 
 .modal {
     display: none;
-    position: absolute;
+    position: fixed;
     top: 50%;
     left: 50%;
     z-index: 1000;
@@ -3224,7 +3333,7 @@ input[type="checkbox"] {
 
 /* Adaptability */
 
-@media (min-width: 576px) {   
+@media (min-width: 576px) {
     .desktop {
         display: block !important;
     }
@@ -3249,8 +3358,7 @@ input[type="checkbox"] {
 }
 
 .mobile-container {
-    max-width: 320px;
-    margin: 0 auto;
+    margin: 0 20px;
 }
 
 .mobile-navbar {
@@ -3269,7 +3377,7 @@ input[type="checkbox"] {
 
 .mobile-bag-wrapper {
     display: flex;
-    margin-left: 97px;
+    margin-left: auto;
     background: #2C2C2C;
     box-shadow: 0px 4px 20px rgba(139, 139, 139, 0.1);
     border-radius: 5px;
@@ -3289,7 +3397,9 @@ input[type="checkbox"] {
 }
 
 .mobile-logo-wrapper {
-    padding: 23px 36.47px 0 40px;
+    padding: 23px 0 0 0;
+    display: flex;
+    justify-content: center;
 }
 
 .mobile-logo-wrapper a {
@@ -3302,7 +3412,12 @@ input[type="checkbox"] {
 
 .mobile-search-wrapper {
     position: relative;
-    margin: 39px 0 0 3px;
+    margin-top: 39px;
+    display: flex;
+    justify-content: center;
+}
+
+.mobile-search-item {
     display: flex;
 }
 
@@ -3310,30 +3425,32 @@ input[type="checkbox"] {
     position: relative;
     background: #2C2C2C;
     border-radius: 5px 0 0 5px;
-    width: 230px;
+    width: 100%;
     height: 50px;
-    padding-left: 19px;
+    padding-left: 14px;
     font-family: Montserrat;
     font-size: 15px;
     line-height: 18px;
     color: #AAAAAA;
 }
 
+.mobile-search-filter-wrapper {
+    padding: 14px 6px 14px 6px;
+    height: 50px;
+    background: #2C2C2C;
+    display: block;
+}
+
 .mobile-search-filter {
     width: 25px;
     height: 18px;
-    position: absolute;
-    top: 16px;
-    right: 54.97px;
-    margin: auto 0;
 }
 
 .mobile-search-button-item {
     background: #2C2C2C;
     border-radius: 0 5px 5px 0;
-    width: 50px;
     height: 50px;
-    padding: 14px 13.23px 14px 13.23px;
+    padding: 14px 6px 14px 6px;
 }
 
 .mobile-navbar-links {
@@ -3433,7 +3550,7 @@ input[type="checkbox"] {
     }
 }
 
-@media (max-width: 576px) and (min-width: 320px) {
+@media (max-width: 576px) and (min-width: 321px) {
     .novetly-phase {
         flex-direction: column;
         margin-left: 0;
@@ -3714,12 +3831,33 @@ input[type="checkbox"] {
         color: var(--white);
     }
     .phones-case-heading-wrapper {
-        margin-left: 25px;
+        margin-left: 37px;
         margin-top: 34px;
     }
+}
+
+@media (max-width: 576px) and (min-width: 321px) {
+    .phone-cards {
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .mobile.phone-cards-start {
+        padding: 33px 37px 0 37px;
+    }
+    .phone-cards-start-quantity-wrapper {
+        margin-left: 72px;
+        margin-top: 5px;
+    }
+}
+
+@media (max-width: 320px) {
     .phone-cards {
         margin-left: 20px;
         margin-right: 24px;
+    }
+    .phone-cards-start-quantity-wrapper {
+        margin-left: 22px;
+        margin-top: 5px;
     }
 }
 
@@ -3736,15 +3874,10 @@ input[type="checkbox"] {
     }
     .mobile.phone-cards-start {
         display: flex !important;
-        padding-right: 10px;
         padding-top: 33px;
     }
     .phone-cards-selector {
         margin-left: 0;
-    }
-    .phone-cards-start-quantity-wrapper {
-        margin-left: 22px;
-        margin-top: 5px;
     }
     .phone-cards-start-quantity {
         font-size: 12px;
@@ -3860,7 +3993,7 @@ input[type="checkbox"] {
     }
     .gurantee-support-form-phase {
         margin-top: 54px;
-        width: 318px;
+        width: 100%;
         height: 550px;
         background: #1F1F1F;
         border-radius: 0;
@@ -3881,7 +4014,7 @@ input[type="checkbox"] {
         font-size: 12px;
     }
     .gurantee-support-form-phase-inputs-start-input {
-        width: 278px;
+        width: 100%;
         height: 50px;
     }
     .gurantee-support-form-phase-inputs-start-item:nth-child(2) {
@@ -3889,7 +4022,7 @@ input[type="checkbox"] {
         margin-top: 18px;
     }
     .gurantee-support-form-phase-inputs-end-input {
-        width: 278px;
+        width: 100%;
         height: 131px;
     }
     .gurantee-support-form-phase-button {
@@ -3906,7 +4039,7 @@ input[type="checkbox"] {
         padding: 18px 0 44px 0;
     }
     .gurantee-support-form-phase-button-link-wrapper .link {
-        width: 278px;
+        width: 100%;
         height: 50px;
         padding: 13px 96px 14px 97px;
     }
@@ -3915,12 +4048,12 @@ input[type="checkbox"] {
 /* Novetlies */
 
 @media (max-width: 576px)  {
-    .phone-cards-start {
+    /* .phone-cards-start {
         flex-direction: column;
-    }
+    } */
     .mobile-phone-cards-start-quantity-wrapper {
-        margin-left: 0;
         display: flex;
+        justify-content: center;
     }
     .novetlies-tabs {
         padding-top: 20px;
@@ -3956,6 +4089,16 @@ input[type="checkbox"] {
         height: 310px;
         object-fit: cover;
         object-position: -250px;
+    }
+}
+
+/* Page-Switcher */
+
+@media (max-width: 576px)  {
+    .page-switcher-items-box {
+        width: 180px;
+        display: flex;
+        justify-content: center;
     }
 }
 
@@ -4165,7 +4308,6 @@ input[type="checkbox"] {
         height: 50px;
     }
     .product-lower-form-add-to-bag {
-        padding: 15px 19px 15px 16px;
         margin-left: 14px;
         display: flex;
         align-items: center;
@@ -4234,6 +4376,42 @@ input[type="checkbox"] {
     }
 }
 
+/* Modal */
+
+@media (max-width: 576px) {
+    .modal {
+        width: 279px;
+        height: 253px;
+    }
+    .modal-content {
+        padding: 19px 18px 26px 17px;
+    }
+    .modal-heading {
+        font-size: 15px;
+        line-height: 18px;
+        color: #111111;
+    }
+    .mobile-mt-21-63 {
+        margin-top: 21.63px;
+    }
+    .modal-image {
+        width: 64px;
+        height: 58.66px;
+    }
+    .modal-text {
+        margin-top: 14.71px;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 140%;
+    }
+    .modal-button {
+        width: 244px;
+        height: 50px;
+        margin-top: 10px;
+        padding: 14px 90px 13px 91px;
+    }
+}
+
 /* Bag-page.html */
 
 @media (max-width: 576px) {
@@ -4260,7 +4438,7 @@ input[type="checkbox"] {
     .bag-page-middle-card-content {
         display: flex;
         flex-direction: column;
-        padding: 13px 20px 17px 20px;
+        padding: 13px 10px 17px 20px;
     }
     .bag-page-middle-card-image-item {
         margin-left: 0;
@@ -4380,18 +4558,18 @@ input[type="checkbox"] {
         margin: 0;
     }
     .personal-data-line {
-        width: 280px;
+        width: 100%;
         height: 2px;
         background: #2C2C2C;
         border-radius: 10px;
     }
-    .personal-data-content {
-        padding: 0 19px 0 21px;
-    }
     .personal-data-first-phase-input {
-        width: 280px;
+        width: 100%;
         height: 50px;
         padding-left: 14px;
+    }
+    .personal-data-content {
+        padding: 0 19px 0 21px;
     }
     .mobile-mt-14 {
         margin-top: 14px;
@@ -4400,14 +4578,14 @@ input[type="checkbox"] {
         margin-top: 32px;
     }
     #country-input, #region-input {
-        width: 280px;
+        width: 100%;
         height: 50px;
         border-radius: 5px;
         padding: 12px 12.72px 15px 14px;
     }
     .personal-data-second-phase-input {
         font-family: Montserrat;
-        width: 280px;
+        width: 100%;
         height: 50px;
         background: #2C2C2C;
         color: #969696;
@@ -4429,7 +4607,7 @@ input[type="checkbox"] {
         position: relative;
         background: #E13439;
         border-radius: 5px;
-        width: 280px;
+        width: 100%;
         height: 50px;
         font-weight: 500;
         font-size: 15px;
@@ -4439,5 +4617,713 @@ input[type="checkbox"] {
     }
     .mobile-pb-68 {
         padding-bottom: 68px;
+    }
+}
+
+/* Carousel */
+
+@media (max-width: 576px) {
+    .carousel-content {
+        display: block;
+        position: absolute;
+        top: 30px;
+        left: 20px;
+    }
+    .carousel-main-text {
+        text-transform: uppercase;
+        display: block;
+        font-size: 18px;
+        color: var(--white);
+    }
+    .carousel-mini-text {
+        margin-top: 10px;
+        width: 170px;
+        display: block;
+        font-size: 10px;
+        line-height: 13px;
+        color: var(--white);
+    }
+    .carousel-link-wrapper {
+        margin-top: 40px;
+    }
+    .carousel-link {
+        color: var(--white);
+        padding: 10px 22px;
+        font-size: 12px;
+        border-radius: 10px;
+        background: transparent;
+        border: 2px solid #fff;
+        transition: all .2s ease-in-out;
+    }
+}
+
+/* IPAD - IPAD PRO */
+
+.tablet {
+    display: none; 
+}
+@media (max-width: 1024px) and (min-width: 576px) {
+    .tablet {
+        display: block;
+    }
+}
+
+.desktop-tablet {
+    display: block;
+}
+@media (max-width: 1024px) and (min-width: 576px) {
+    .desktop-tablet {
+        display: none;
+    }
+}
+@media (max-width: 576px) {
+    .desktop-tablet {
+        display: none;
+    }
+}
+
+.desktop-tablet-2 {
+    display: block;
+}
+@media (max-width: 1024px) and (min-width: 576px) {
+    .desktop-tablet-2 {
+        display: none;
+    }
+}
+
+@media (max-width: 1024px) and (min-width: 576px) {
+    .container {
+        max-width: 768px;
+        padding: 0 20px;
+    }
+    .tablet-mr-imp-0 {
+        margin-right: 0 !important;
+    }
+}
+
+/* IPAD - IPAD PRO / Main Navbar */
+
+
+@media (max-width: 1024px) and (min-width: 576px) {
+    .main-navbar {
+        width: 100%;
+    }
+    .navbar-content {
+        padding: 24px 20px;
+        margin: 0 auto;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .logo {
+        width: 200px;
+    }
+    .search-wrapper {
+        margin-left: 30px;
+        margin-top: 0;
+    }
+    .search {
+        width: 190px;
+    }
+    .number-wrapper {
+        margin-left: 106px;
+    }
+    .phone-texts {
+        display: none;
+    }
+    .phone-logo-wrapper {
+        margin-top: 0;
+    }
+    .languages-wrapper {
+        margin-left: 25px;
+        margin-top: 0;
+    }
+    .language-list {
+        display: none;
+        position: absolute;
+        left: 25px;
+        bottom: -110px;
+    }
+}
+
+/* IPAD - IPAD PRO / Carousel */
+
+
+@media (max-width: 1024px) and (min-width: 576px) {
+    .sn-link {
+        font-size: 12px;
+        line-height: 15px;
+    }
+    .sn-drop-button {
+        display: none;
+    }
+    .nav-drop-panel {
+        display: none !important;
+    }
+    .p-36, .p-36-2 {
+        padding: 21px 15px;
+    }
+    .ipad-p-15 {
+        padding: 15px;
+    }
+    .sn-bag-item {
+        padding: 0 30px;
+    }
+    .bag {
+        left: 5px;
+        width: 20px;
+    }
+    .bag-counter {
+        right: 5px;
+        width: 20px;
+        height: 20px;
+        padding: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+/* IPAD - IPAD PRO / Carousel */
+
+
+@media (max-width: 1024px) and (min-width: 576px) {
+    .carousel-item {
+        width: 1024px;
+        height: 450px;
+    }
+    .carousel-image {
+        object-fit: cover;
+        object-position: right;
+    }
+    .carousel-content {
+        display: block;
+        position: absolute;
+        top: 70px;
+        left: 65px;
+    }
+    .carousel-main-text {
+        width: 380px;
+        text-transform: uppercase;
+        display: block;
+        font-size: 54px;
+        color: var(--white);
+    }
+    .carousel-mini-text {
+        margin-top: 10px;
+        width: 290px;
+        display: block;
+        font-size: 22px;
+        line-height: 25px;
+        color: var(--white);
+    }
+    .carousel-link-wrapper {
+        margin-top: 120px;
+    }
+    .carousel-link {
+        color: var(--white);
+        padding: 20px 40px;
+        font-size: 22px;
+        border-radius: 10px;
+        background: transparent;
+        border: 2px solid #fff;
+        transition: all .2s ease-in-out;
+    }
+}
+
+/* IPAD - IPAD PRO / Novetly */
+
+
+@media (max-width: 1024px) and (min-width: 576px) {
+    .ipad-mr-19 {
+        margin-right: 19px;
+    }
+    .novetly-phase {
+        flex-wrap: wrap;
+    }
+    .novetly-card-image {
+        width: 210px;
+        height: 200px;
+    }
+    .novetly-card {
+        width: 230px;
+        padding: 10px 10px 19px 10px;
+    }
+    .novetly-availability-price {
+        padding: 5px 40px 4px 16px;
+    }
+    .novetly-availability-no-sale-text {
+        font-size: 15px;
+        line-height: 18px;
+    }
+    .novetly-label {
+        top: 5px;
+        left: 5px;
+        padding: 4px 10px 6px 10px;
+    }
+    .sale-label {
+        top: 5px;
+        right: 55px;
+        padding: 4px 11px 6px 14px;
+    }
+    .ipad-d-none {
+        display: none;
+    }
+    .ipad-mt-19 {
+        margin-top: 19px;
+    }
+}
+
+/* IPAD - IPAD PRO / Avengers */
+
+@media (max-width: 1024px) and (min-width: 576px) {
+    .avengers {
+        height: 612px;
+    }
+    .avengers-slider-item {
+        width: 230px;
+    }
+    .avengers-content {
+        display: flex;
+        flex-direction: column;
+    }
+    .avengers-headings-wrapper {
+        padding: 40px 0 0 0;
+        text-align: center;
+    }
+    .avengers-heading {
+        margin-bottom: 24px;
+    }
+    .avengers-slider {
+        margin-left: 0px;
+        margin-top: 48px;
+    }
+    .avengers-slider-content {
+        display: flex;
+        width: 710px;
+        height: 360px;
+    }
+    .avengers-slider .swiper-slide {
+        width: 230px !important;
+        height: 300px;
+    }
+    .avengers-slider-item {
+        width: 230px !important;
+        height: 300px !important;
+    }
+    .hover-appear {
+        display: none !important;
+    }
+    .avengers-slider-item:hover .avengers-item-texts {
+        margin-top: 9px;
+    }
+    .avengers-slider-item:hover .avenger-slider-item-details {
+        top: auto;
+    }
+    .avengers-slider-image {
+        width: 210px;
+        height: 210px;
+    }
+    .avenger-slider-item-details {
+        width: 230px;
+        top: auto;
+    }
+}
+
+/* IPAD - IPAD PRO / Common footer background */
+
+@media (max-width: 1024px) and (min-width: 576px) {
+    .common-div-for-background-decor {
+        background-image: url(../img/Website-background/3d-effect.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center 850px;
+    }
+}
+
+/* IPAD - IPAD PRO / Popular */
+
+@media (max-width: 1024px) and (min-width: 576px) {
+    .popular-content {
+        width: 728px !important;
+    }
+    .popular-content .swiper-slide {
+        width: 230px !important;
+        margin-right: 19px !important;
+    }
+}
+
+/* IPAD - IPAD PRO / More Info */
+
+@media (max-width: 1024px) and (min-width: 576px) {
+    .more-info {
+        margin-top: 507px;
+        padding: 0 20px;
+        max-width: 768px;
+        margin: 507px auto 0 auto;
+    }
+    .more-info-content {
+        padding: 30px;
+    }
+    .more-info-image {
+        width: 250px;
+    }
+    .more-info-heading {
+        font-size: 22px;
+    }
+    .more-info-text {
+        margin-top: 13px;
+        font-size: 12px;
+    }
+}
+
+/* IPAD - IPAD PRO / Tips And Footer */
+
+@media (max-width: 1024px) and (min-width: 576px) {
+    .tips {
+        width: 514px;
+        margin: 300px auto 0 auto;
+    }
+    .tips-content {
+        display: flex;
+        flex-direction: column;
+    }
+    .tips-item {
+        width: 252px;
+        height: 184px;
+        border-radius: 5px;
+    }
+    .tips-number {
+        font-size: 42px;
+    }
+    .tips-heading {
+        font-size: 12px;
+        margin-top: 10px;
+    }
+    .tips-text {
+        margin-top: 5px;
+        font-size: 12px;
+    }
+    .tips-1-padding, .tips-2-padding, .tips-3-padding, .tips-4-padding {
+        padding: 30px 20px 42px 20px;
+    }
+    /* Footer */
+    .footer {
+        margin-top: 460px;
+        height: 280px;
+        padding: 40px 20px 0 20px;
+        background-size: 1959px 547px;
+        background-position: center bottom
+    }
+    .footer-content {
+        padding: 0;
+        justify-content: space-between;
+    }
+    .footer-company-logo {
+        width: 200px;
+    }
+    .social-media {
+        margin-top: 20px;
+    }
+    .footer-logo {
+        width: 25px;
+    }
+    .footer-nav {
+        margin-left: 40px;
+    }
+    .footer-list-2 {
+        margin-left: 30px;
+    }
+    .footer-nav-link {
+        color: var(--block-stroke);
+        font-weight: 500;
+        font-size: 13px;
+        white-space: nowrap;
+    }
+    .footer-column {
+        margin-left: 40px;
+    }
+    .footer-phone-time {
+        font-size: 10px;
+    }
+    .footer-phone-number {
+        font-size: 13px;
+    }
+    .footer-link-wrapper {
+        margin-top: 20px;
+    }
+    .footer-number-link-padding {
+        padding: 16px 14px;
+        text-align: center;
+    }
+    .all-rights-reserved {
+        max-width: 728px;
+    }
+    .all-rights-reserved-text {
+        width: 728px;
+    }
+}
+
+/* IPAD - IPAD PRO / SMARTPHONES.html */
+
+/* IPAD - IPAD PRO / SMARTPHONES.html / Cards */
+
+@media (max-width: 1024px) and (min-width: 576px) {
+    .tablet-mobile {
+        flex-direction: column;
+    }
+    .phone-cards {
+        margin-left: 0;
+        margin-top: 20px;
+    }
+    .phone-cards-content .mr-30 {
+        margin-right: 19px;
+    }
+    .phone-cards-content .mt-30 {
+        margin-top: 19px;
+    }
+    .smartphones-filter {
+        position: relative;
+        width: 270px;
+        margin: 0 auto;
+    }
+    .phone-cards-selector {
+        margin-left: 0;
+    }
+}
+
+/* IPAD - IPAD PRO / DELIVERY-INFO.html */
+
+/* IPAD - IPAD PRO / DELIVERY-INFO.html / Background */
+
+@media (max-width: 1024px) and (min-width: 576px) {
+    .delivery-info-background, .support-and-gurantee-background {
+        background-image: none;
+    }
+}
+
+/* IPAD - IPAD PRO / SUPPORT-GURANTEE.html */
+
+/* IPAD - IPAD PRO / SUPPORT-GURANTEE.html / Forms */
+
+@media (max-width: 1024px) and (min-width: 576px) {
+    .gurantee-support-contacts-and-form-content {
+        flex-direction: column;
+    }
+    .gurantee-support-form-phase-heading {
+        padding: 27px 0 28px 44px;
+    }
+    .gurantee-support-form-phase {
+        width: 728px;
+        margin-left: 0;
+    }
+    .gurantee-support-form-phase-inputs-end-input, .gurantee-support-form-phase-inputs-start-input {
+        width: 100%;
+    }
+    .gurantee-support-form-phase-inputs-start {
+        width: 657px;
+    }
+    .gurantee-support-form-phase {
+        margin-top: 50px;
+    }
+}
+
+/* IPAD - IPAD PRO / SHARES.html */
+
+/* IPAD - IPAD PRO / SHARES.html / Cards */
+
+@media (max-width: 1024px) and (min-width: 576px) {
+    .shares-card {
+        cursor: pointer;
+        width: 349px;
+        height: 458px;
+    }
+    .shares-card-image {
+        width: 349px;
+        height: 259px;
+    }
+    .shares-card-texts {
+        width: 349px;
+        height: 199px;
+        background: #292929;
+        border-radius: 0px 0px 10px 10px;
+        padding: 20px 19px 20px 19px;
+    }
+    .shares-card-heading {
+        font-size: 14px;
+    }
+}
+
+/* IPAD - IPAD PRO / SHARES-INNER.html */
+
+/* IPAD - IPAD PRO / SHARES-INNER.html / Cards and Image */
+
+@media (max-width: 1024px) and (min-width: 576px) {
+    .tablet-mt-807 {
+        margin-top: 723px;
+    }
+    .tablet-mt-807-2 {
+        margin-top: 870px;
+    }
+    .swiper-container-4 .shares-card-image {
+        width: 230px;
+        height: 140px;
+    }
+    .swiper-container-4 .shares-card-texts {
+        width: 230px;
+        height: 220px;
+        background: #292929;
+        border-radius: 0px 0px 10px 10px;
+        padding: 20px 19px 20px 19px;
+    }
+    .swiper-container-4 .shares-card {
+        cursor: pointer;
+        width: 230px;
+        height: 360px;
+    }
+    .swiper-container-4 .mr-30 {
+        margin-right: 0;
+    }
+    .swiper-container-4 .shares-card-mini-heading {
+        font-size: 10px;
+        padding-bottom: 5px;
+    }
+    .swiper-container-4 .shares-card-text {
+        font-size: 12px;
+        padding-bottom: 0;
+    }
+    .shares-card-eye-wrapper {
+        padding-top: 10px;
+    }
+    .collections-avenger-bannner-image {
+        object-fit: cover;
+        width: 100%;
+    }
+}
+
+/* IPAD - IPAD PRO / NOVETLY.html */
+
+/* IPAD - IPAD PRO / NOVETLY.html / Novetlies tabs */
+
+@media (max-width: 1024px) and (min-width: 576px) {
+    .novetlies-tabs {
+        margin: 20px auto 0 auto;
+        width: 519px;
+    }
+}
+
+/* IPAD - IPAD PRO / BAG-PAGE.html */
+
+/* IPAD - IPAD PRO / BAG-PAGE.html / Cards */
+
+@media (max-width: 1024px) and (min-width: 576px) {
+    .bag-page-middle-card-content {
+        padding: 27px 20px 33px 20px;
+    }
+    .cbx {
+        left: 20px;
+    }
+    .bag-page-middle-card-image-item {
+        margin-left: calc(39px + 10px);
+    }
+    .bag-page-middle-card-description-item {
+        margin-left: 20px;
+    }
+    .bag-page-line, .bag-page-line-upper {
+        width: 728px;
+    }
+    .bag-page-middle-card-numbers-switcher-item {
+        margin-left: 30px;
+        margin-top: 12px;
+        padding-left: 0;
+        padding-right: 0;
+        border-left: none;
+        border-right: none;
+    }
+    .tablet-column {
+        display: flex;
+        flex-direction: column;
+    }
+    .bag-page-middle-card-price-and-delete-item {
+        width: 195px;
+        display: flex;
+        justify-content: space-between;
+        margin-left: 30px;
+        margin-top: 30px;
+    }
+    .bag-page-middle-card-price-text {
+        font-size: 20px;
+    }
+    .bag-page-middle-card-delete-wrapper {
+        margin-top: 35px;
+    }
+    .bag-page-middle-card-main-text {
+        width: 200px;
+    }
+    .bag-page-lower-phase {
+        padding: 39px 30px 44px 30px;
+    }
+    .bag-page-lower-phase-buttons {
+        padding-top: 5px;
+        display: flex;
+        align-items: center;
+    }
+}
+
+@media (min-width: 1024px) {
+    .tablet-column {
+        display: flex;
+    }
+}
+
+/* IPAD - IPAD PRO / CHECKOUT.html */
+
+/* IPAD - IPAD PRO / CHECKOUT.html / Your purchases */
+
+@media (max-width: 1024px) and (min-width: 576px) {
+    .your-purchases {
+        margin: 38px auto 0 auto;
+        width: 393px;
+        border-radius: 5px;
+    }
+    #country-input, #region-input, .personal-data-line, .personal-data-second-phase-input {
+        width: 100%;
+    }
+    .width-and-m-auto {
+        width: 670px;
+        margin: 21px auto 0 auto;
+    }
+}
+
+/* IPAD - IPAD PRO / CARD-PRODUCT.html */
+
+/* IPAD - IPAD PRO / CARD-PRODUCT.html / Cards and form */
+
+@media (max-width: 1024px) and (min-width: 576px) {
+    .tablet-flex {
+        display: flex !important;
+    }
+    .product-pick-content {
+        flex-direction: column;
+    }
+    .product-image-form-block {
+        margin-left: 0;
+    }
+    .common-information-line {
+        position: absolute;
+        top: 61px;
+        left: 0;
+        width: 100%;
+    }
+    .tablet-m-20 {
+        width: 728px;
+    }
+    .common-information-content {
+        padding-left: 10px;
+    }
+    .product-images-switcher {
+        margin: 0 auto;
+    }
+    .product-image-form-block {
+        margin: 30px 60px 0 60px;
     }
 }

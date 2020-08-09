@@ -14,8 +14,9 @@ $(document).ready(function(){
                 nav: false,
         
             },
-            1000:{
-                items:1
+            768:{
+                items:1,
+                nav: true,
             }
         }
     });
@@ -24,21 +25,7 @@ $(document).ready(function(){
         loop:true,
         nav: false,
         dots: true,
-        items: 1,
-        responsive:{
-            0:{
-                items: 1,
-                nav: false,
-            },
-            576:{
-                items: 1,
-                nav: false,
-        
-            },
-            1000:{
-                items:1
-            }
-        }
+        items: 1
     });
     
     $(".owl-next").html('<svg width="14" height="14" class="header-arrow-next" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0.841477 6.01732C0.898762 6.00803 0.956735 6.00374 1.01474 6.00449H10.8915L10.6761 5.90432C10.4656 5.80468 10.2741 5.66908 10.1101 5.50364L7.34046 2.73396C6.97569 2.38575 6.91439 1.82558 7.19521 1.40672C7.52205 0.960373 8.14882 0.863459 8.5952 1.19029C8.63126 1.21671 8.66554 1.24551 8.69775 1.2765L13.7062 6.28496C14.0976 6.67594 14.098 7.31016 13.707 7.70157C13.7067 7.70183 13.7065 7.70211 13.7062 7.70236L8.69775 12.7108C8.30603 13.1014 7.6718 13.1006 7.28114 12.7088C7.2504 12.678 7.2217 12.6452 7.19521 12.6107C6.91439 12.1918 6.97569 11.6316 7.34046 11.2834L10.1051 8.50872C10.2521 8.3616 10.4211 8.23823 10.606 8.1431L10.9065 8.00787H1.06986C0.558155 8.02687 0.109209 7.66943 0.0130777 7.16645C-0.0754786 6.62037 0.295399 6.10591 0.841477 6.01732Z" fill="#E13439"/></svg>');
@@ -119,6 +106,7 @@ $(document).ready(function(){
         loop: true,
         cssMode: true,
         keyboard: true,
+        spaceBetween: 19,
       
         // Navigation arrows
         navigation: {
@@ -361,36 +349,56 @@ $(document).ready(function(){
         $(".bag-drop-panel").toggleClass("active");
     })
 
+    // Product Button
+
+    checkProduct();
+
+    function checkProduct() {
+        $(".product-lower-form-add-to-bag").click(function () {
+            $(".classic.active").removeClass("active");
+            $(".secondary-product-button").addClass("active");
+            crossProduct();
+        })
+    }
+
+    function crossProduct() {
+        $(".product-lower-form-add-to-bag").click(function () {
+            $(".classic").addClass("active");
+            $(".secondary-product-button.active").removeClass("active");
+            checkProduct();
+        })
+    }
+
     // Quantity-counter
 
-    $(".product-lower-form-quantity-counter-next-wrapper").click(function () {
-        counterNext();
-        function counterNext() {
+    // $(".product-lower-form-quantity-counter-next-wrapper").click(function () {
+    //     counterNext();
+    //     function counterNext() {
             
-            for (let i = 0; i < 2; i++) {
+    //         for (let i = 0; i < 2; i++) {
 
-                let counterValStart = Number($("#product-lower-form-quantity-number-wrapper").val());
-                let counterValFinish = counterValStart + i;
+    //             let counterValStart = Number($("#product-lower-form-quantity-number-wrapper").val());
+    //             let counterValFinish = counterValStart + i;
 
-                $("#product-lower-form-quantity-number-wrapper").val(counterValFinish);
+    //             $("#product-lower-form-quantity-number-wrapper").val(counterValFinish);
     
-            }   
-        }
-    })
+    //         }   
+    //     }
+    // })
 
-    $(".product-lower-form-quantity-counter-prev-wrapper").click(function () {
-        counterPrev();
-        function counterPrev() {
-            for (let i = 0; i < 2; i++) {
+    // $(".product-lower-form-quantity-counter-prev-wrapper").click(function () {
+    //     counterPrev();
+    //     function counterPrev() {
+    //         for (let i = 0; i < 2; i++) {
 
-                let counterValStart = Number($("#product-lower-form-quantity-number-wrapper").val());
-                let counterValFinish = counterValStart - i;
+    //             let counterValStart = Number($("#product-lower-form-quantity-number-wrapper").val());
+    //             let counterValFinish = counterValStart - i;
 
-                $("#product-lower-form-quantity-number-wrapper").val(counterValFinish);
+    //             $("#product-lower-form-quantity-number-wrapper").val(counterValFinish);
     
-            }   
-        }
-    })
+    //         }   
+    //     }
+    // })
 
 
   });

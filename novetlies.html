@@ -7,6 +7,7 @@
 
     <!-- Css -->
     <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/swiper-bundle.css">
 
     <!-- User Css -->
     <link rel="stylesheet" href="css/style.css">
@@ -31,12 +32,12 @@
                 </form>
                 <div class="number-wrapper">
                     <div class="phone-logo-wrapper">
-                        <img src="img/Navbar/Phone.png" alt="" class="phone-logo">
+                        <a href="tel: +998 (90) 000 00 00"><img src="img/Navbar/Phone.png" alt="" class="phone-logo"></a>
                     </div>
                     <div class="phone-texts">
                         <div class="phone-time"> 09:00 - 20:00</div>
                         <div class="phone-number fz-15"> +998 (00) 000-00-00</div>
-                        <a href="#" class="phone-link"> Заказать звонок</a>
+                        <a href="tel: +998 (90) 000 00 00" class="phone-link"> Заказать звонок</a>
                     </div>
                 </div>
                 <div class="language-switcher">
@@ -397,7 +398,7 @@
                                     <img src="img/Navbar/Burger.png" alt="" class="mobile-burger">
                                 </div>
                                 <div class="mobile-phone-wrapper">
-                                    <img src="img/Navbar/Phone.png" alt="" class="phone-logo">
+                                    <a href="tel: +998 (90) 000 00 00"><img src="img/Navbar/Phone.png" alt="" class="phone-logo"></a>
                                 </div>
                                 <a href="bag-page.html" class="mobile-bag-wrapper d-block">
                                     <div>
@@ -416,8 +417,12 @@
                         <form action="">
                             <div class="mobile-search-wrapper">
                                 <div class="mobile-search-item">
-                                    <input type="text" class="mobile-search-input" placeholder="Поиск по каталогу">
-                                    <img src="img/Navbar/Filter.png" alt="" class="mobile-search-filter">
+                                    <div>
+                                        <input type="text" class="mobile-search-input" placeholder="Поиск по каталогу">
+                                    </div>
+                                    <div class="mobile-search-filter-wrapper">
+                                        <img src="img/Navbar/Filter.png" alt="" class="mobile-search-filter">
+                                    </div>
                                 </div>
                                 <button type="submit" class="mobile-search-button-item">
                                     <img src="img/Navbar/Mobile-search-icon.png" alt="" class="mobile-search-button">
@@ -442,27 +447,167 @@
             </div>
         </div>
     
-        <div class="breadcrumber container">
-            <div class="flex">
-                <a href="index.html" class="breadcrumber-home-link"> Главная</a>
-                <span class="breadcrumber-slash"> /</span>
-                <a href="smartphones.html" class="breadcrumber-smartphones-link"> Новинки</a>
+            <div class="breadcrumber container">
+                <div class="flex">
+                    <a href="index.html" class="breadcrumber-home-link"> Главная</a>
+                    <span class="breadcrumber-slash"> /</span>
+                    <a href="smartphones.html" class="breadcrumber-smartphones-link"> Новинки</a>
+                </div>
             </div>
-        </div>
     
-        <div class="phones-case-heading-wrapper container">
-            <div class="phone-case-heading fw-bold">
-                Новинки
+            <div class="phones-case-heading-wrapper container">
+                <div class="phone-case-heading fw-bold">
+                    Новинки
+                </div>
             </div>
-        </div>
     
         <div class="desktop flex container mt-37">
             <div class="phone-cards" style="margin-left: 0;">
-                <div class="phone-cards-start">
-                    <div class="phone-cards-start-quantity-wrapper mt-16">
-                        <div class="phone-cards-start-quantity">
-                            Всего товаров в разделе: 
-                            <span class="red"> 131</span>
+                <div class="desktop-tablet phone-cards-start">
+                    <div class="flex">
+                        <div class="phone-cards-start-quantity-wrapper mt-16">
+                            <div class="phone-cards-start-quantity">
+                                Всего товаров в разделе: 
+                                <span class="red"> 131</span>
+                            </div>
+                        </div>
+                        <div class="novetlies-tabs">
+                            <div class="novetlies-tabs-content">
+                                <label for="novetlies-input-first" class="mr-12 novetlies-tabs-item"> 
+                                    <div>Для смартфонов</div>
+                                </label>
+                                <label for="novetlies-input-second" class="mr-12 novetlies-tabs-item active"> 
+                                    <div>Для ноутбуков</div>
+                                </label>
+                                <label for="novetlies-input-third" class="novetlies-tabs-item">
+                                    <div>Для планшетов</div> 
+                                </label>
+                            </div>
+                            <div class="novetlies-tabs-checkboxes">
+                                <input type="checkbox" id="novetlies-input-first">
+                                <input type="checkbox" id="novetlies-input-second">
+                                <input type="checkbox" id="novetlies-input-third">
+                            </div>
+                        </div>
+                        <div class="phone-cards-selector ml-150">
+                            <div class="phone-cards-selector-front">
+                                <div class="phone-cards-selector-item phone-cards-selector-item-default active">
+                                    <div class="flex" style="justify-content: space-between;">
+                                        <div class="phone-cards-selector-item-text"> Сортировать по</div>
+                                        <div>
+                                            <img src="img/Smartphones/Arrow.png" alt="" class="phone-cards-selector-item-image">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="phone-cards-selector-item phone-cards-selector-item-size">
+                                    <div class="flex" style="justify-content: space-between;">
+                                        <div class="phone-cards-selector-item-text"> По размеру</div>
+                                        <div>
+                                            <img src="img/Smartphones/Arrow.png" alt="" class="phone-cards-selector-item-image">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="phone-cards-selector-item phone-cards-selector-item-name">
+                                    <div class="flex" style="justify-content: space-between;">
+                                        <div class="phone-cards-selector-item-text"> По названию</div>
+                                        <div>
+                                            <img src="img/Smartphones/Arrow.png" alt="" class="phone-cards-selector-item-image">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="phone-cards-selector-item phone-cards-selector-item-price">
+                                    <div class="flex" style="justify-content: space-between;">
+                                        <div class="phone-cards-selector-item-text"> По цене</div>
+                                        <div>
+                                            <img src="img/Smartphones/Arrow.png" alt="" class="phone-cards-selector-item-image">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="phone-cards-selector-back">
+                                <div class="phone-cards-selector-back-list">
+                                    <div class="phone-cards-selector-back-item phone-cards-selector-list-size">
+                                        <div class="phone-cards-selector-back-text-wrapper">
+                                            <div class="phone-cards-selector-back-text"> По размеру</div>
+                                        </div>
+                                    </div>
+                                    <div class="phone-cards-selector-back-item phone-cards-selector-list-name">
+                                        <div class="phone-cards-selector-back-text-wrapper">
+                                            <div class="phone-cards-selector-back-text"> По названию</div>
+                                        </div>
+                                    </div>
+                                    <div class="phone-cards-selector-back-item phone-cards-selector-list-price">
+                                        <div class="phone-cards-selector-back-text-wrapper">
+                                            <div class="phone-cards-selector-back-text"> По цене</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tablet phone-cards-start" style="flex-direction: column;">
+                    <div class="flex" style="justify-content: space-between;">
+                        <div class="phone-cards-start-quantity-wrapper mt-16">
+                            <div class="phone-cards-start-quantity">
+                                Всего товаров в разделе: 
+                                <span class="red"> 131</span>
+                            </div>
+                        </div>
+                        <div class="phone-cards-selector ml-150">
+                            <div class="phone-cards-selector-front">
+                                <div class="phone-cards-selector-item phone-cards-selector-item-default active">
+                                    <div class="flex" style="justify-content: space-between;">
+                                        <div class="phone-cards-selector-item-text"> Сортировать по</div>
+                                        <div>
+                                            <img src="img/Smartphones/Arrow.png" alt="" class="phone-cards-selector-item-image">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="phone-cards-selector-item phone-cards-selector-item-size">
+                                    <div class="flex" style="justify-content: space-between;">
+                                        <div class="phone-cards-selector-item-text"> По размеру</div>
+                                        <div>
+                                            <img src="img/Smartphones/Arrow.png" alt="" class="phone-cards-selector-item-image">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="phone-cards-selector-item phone-cards-selector-item-name">
+                                    <div class="flex" style="justify-content: space-between;">
+                                        <div class="phone-cards-selector-item-text"> По названию</div>
+                                        <div>
+                                            <img src="img/Smartphones/Arrow.png" alt="" class="phone-cards-selector-item-image">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="phone-cards-selector-item phone-cards-selector-item-price">
+                                    <div class="flex" style="justify-content: space-between;">
+                                        <div class="phone-cards-selector-item-text"> По цене</div>
+                                        <div>
+                                            <img src="img/Smartphones/Arrow.png" alt="" class="phone-cards-selector-item-image">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="phone-cards-selector-back">
+                                <div class="phone-cards-selector-back-list">
+                                    <div class="phone-cards-selector-back-item phone-cards-selector-list-size">
+                                        <div class="phone-cards-selector-back-text-wrapper">
+                                            <div class="phone-cards-selector-back-text"> По размеру</div>
+                                        </div>
+                                    </div>
+                                    <div class="phone-cards-selector-back-item phone-cards-selector-list-name">
+                                        <div class="phone-cards-selector-back-text-wrapper">
+                                            <div class="phone-cards-selector-back-text"> По названию</div>
+                                        </div>
+                                    </div>
+                                    <div class="phone-cards-selector-back-item phone-cards-selector-list-price">
+                                        <div class="phone-cards-selector-back-text-wrapper">
+                                            <div class="phone-cards-selector-back-text"> По цене</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                     <div class="novetlies-tabs">
@@ -483,65 +628,10 @@
                             <input type="checkbox" id="novetlies-input-third">
                         </div>
                     </div>
-                    <div class="phone-cards-selector ml-150">
-                        <div class="phone-cards-selector-front">
-                            <div class="phone-cards-selector-item phone-cards-selector-item-default active">
-                                <div class="flex" style="justify-content: space-between;">
-                                    <div class="phone-cards-selector-item-text"> Сортировать по</div>
-                                    <div>
-                                        <img src="img/Smartphones/Arrow.png" alt="" class="phone-cards-selector-item-image">
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="phone-cards-selector-item phone-cards-selector-item-size">
-                                <div class="flex" style="justify-content: space-between;">
-                                    <div class="phone-cards-selector-item-text"> По размеру</div>
-                                    <div>
-                                        <img src="img/Smartphones/Arrow.png" alt="" class="phone-cards-selector-item-image">
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="phone-cards-selector-item phone-cards-selector-item-name">
-                                <div class="flex" style="justify-content: space-between;">
-                                    <div class="phone-cards-selector-item-text"> По названию</div>
-                                    <div>
-                                        <img src="img/Smartphones/Arrow.png" alt="" class="phone-cards-selector-item-image">
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="phone-cards-selector-item phone-cards-selector-item-price">
-                                <div class="flex" style="justify-content: space-between;">
-                                    <div class="phone-cards-selector-item-text"> По цене</div>
-                                    <div>
-                                        <img src="img/Smartphones/Arrow.png" alt="" class="phone-cards-selector-item-image">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="phone-cards-selector-back">
-                            <div class="phone-cards-selector-back-list">
-                                <div class="phone-cards-selector-back-item phone-cards-selector-list-size">
-                                    <div class="phone-cards-selector-back-text-wrapper">
-                                        <div class="phone-cards-selector-back-text"> По размеру</div>
-                                    </div>
-                                </div>
-                                <div class="phone-cards-selector-back-item phone-cards-selector-list-name">
-                                    <div class="phone-cards-selector-back-text-wrapper">
-                                        <div class="phone-cards-selector-back-text"> По названию</div>
-                                    </div>
-                                </div>
-                                <div class="phone-cards-selector-back-item phone-cards-selector-list-price">
-                                    <div class="phone-cards-selector-back-text-wrapper">
-                                        <div class="phone-cards-selector-back-text"> По цене</div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
                 </div>
                 <div class="phone-cards-content">
                     <div class="flex">
-                        <div class="novetly-card mr-30">
+                        <a href="card-product.html" class="novetly-card mr-30">
                             <div class="novetly-card-content">
                                 <div class="novetly-card-image-wrapper">
                                     <img src="img/Cards/Card-image.jpg" alt="" class="novetly-card-image">
@@ -579,8 +669,8 @@
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="novetly-card mr-30">
+                        </a>
+                        <a href="card-product.html" class="novetly-card mr-30">
                             <div class="novetly-card-content">
                                 <div class="novetly-card-image-wrapper">
                                     <img src="img/Cards/Card-image.jpg" alt="" class="novetly-card-image">
@@ -618,8 +708,8 @@
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="novetly-card mr-30">
+                        </a>
+                        <a href="card-product.html" class="novetly-card mr-30">
                             <div class="novetly-card-content">
                                 <div class="novetly-card-image-wrapper">
                                     <img src="img/Cards/Card-image.jpg" alt="" class="novetly-card-image">
@@ -657,8 +747,8 @@
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="novetly-card">
+                        </a>
+                        <a href="card-product.html" class="novetly-card ipad-d-none">
                             <div class="novetly-card-content">
                                 <div class="novetly-card-image-wrapper">
                                     <img src="img/Cards/Card-image.jpg" alt="" class="novetly-card-image">
@@ -696,10 +786,10 @@
                                     </div>
                                 </div>
                             </div>
-                        </div>
+                        </a>
                     </div>
                     <div class="flex mt-30">
-                        <div class="novetly-card mr-30">
+                        <a href="card-product.html" class="novetly-card mr-30">
                             <div class="novetly-card-content">
                                 <div class="novetly-card-image-wrapper">
                                     <img src="img/Cards/Card-image.jpg" alt="" class="novetly-card-image">
@@ -737,8 +827,8 @@
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="novetly-card mr-30">
+                        </a>
+                        <a href="card-product.html" class="novetly-card mr-30">
                             <div class="novetly-card-content">
                                 <div class="novetly-card-image-wrapper">
                                     <img src="img/Cards/Card-image.jpg" alt="" class="novetly-card-image">
@@ -776,8 +866,8 @@
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="novetly-card mr-30">
+                        </a>
+                        <a href="card-product.html" class="novetly-card mr-30">
                             <div class="novetly-card-content">
                                 <div class="novetly-card-image-wrapper">
                                     <img src="img/Cards/Card-image.jpg" alt="" class="novetly-card-image">
@@ -815,8 +905,8 @@
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="novetly-card">
+                        </a>
+                        <a href="card-product.html" class="novetly-card ipad-d-none">
                             <div class="novetly-card-content">
                                 <div class="novetly-card-image-wrapper">
                                     <img src="img/Cards/Card-image.jpg" alt="" class="novetly-card-image">
@@ -854,10 +944,10 @@
                                     </div>
                                 </div>
                             </div>
-                        </div>
+                        </a>
                     </div>
                     <div class="flex mt-30">
-                        <div class="novetly-card mr-30">
+                        <a href="card-product.html" class="novetly-card mr-30">
                             <div class="novetly-card-content">
                                 <div class="novetly-card-image-wrapper">
                                     <img src="img/Cards/Card-image.jpg" alt="" class="novetly-card-image">
@@ -895,8 +985,8 @@
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="novetly-card mr-30">
+                        </a>
+                        <a href="card-product.html" class="novetly-card mr-30">
                             <div class="novetly-card-content">
                                 <div class="novetly-card-image-wrapper">
                                     <img src="img/Cards/Card-image.jpg" alt="" class="novetly-card-image">
@@ -934,8 +1024,8 @@
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="novetly-card mr-30">
+                        </a>
+                        <a href="card-product.html" class="novetly-card mr-30">
                             <div class="novetly-card-content">
                                 <div class="novetly-card-image-wrapper">
                                     <img src="img/Cards/Card-image.jpg" alt="" class="novetly-card-image">
@@ -973,8 +1063,8 @@
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="novetly-card">
+                        </a>
+                        <a href="card-product.html" class="novetly-card ipad-d-none">
                             <div class="novetly-card-content">
                                 <div class="novetly-card-image-wrapper">
                                     <img src="img/Cards/Card-image.jpg" alt="" class="novetly-card-image">
@@ -1012,10 +1102,10 @@
                                     </div>
                                 </div>
                             </div>
-                        </div>
+                        </a>
                     </div>
                     <div class="flex mt-30">
-                        <div class="novetly-card mr-30">
+                        <a href="card-product.html" class="novetly-card mr-30">
                             <div class="novetly-card-content">
                                 <div class="novetly-card-image-wrapper">
                                     <img src="img/Cards/Card-image.jpg" alt="" class="novetly-card-image">
@@ -1053,8 +1143,8 @@
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="novetly-card mr-30">
+                        </a>
+                        <a href="card-product.html" class="novetly-card mr-30">
                             <div class="novetly-card-content">
                                 <div class="novetly-card-image-wrapper">
                                     <img src="img/Cards/Card-image.jpg" alt="" class="novetly-card-image">
@@ -1092,8 +1182,8 @@
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="novetly-card mr-30">
+                        </a>
+                        <a href="card-product.html" class="novetly-card mr-30">
                             <div class="novetly-card-content">
                                 <div class="novetly-card-image-wrapper">
                                     <img src="img/Cards/Card-image.jpg" alt="" class="novetly-card-image">
@@ -1131,8 +1221,8 @@
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="novetly-card">
+                        </a>
+                        <a href="card-product.html" class="novetly-card ipad-d-none">
                             <div class="novetly-card-content">
                                 <div class="novetly-card-image-wrapper">
                                     <img src="img/Cards/Card-image.jpg" alt="" class="novetly-card-image">
@@ -1170,10 +1260,10 @@
                                     </div>
                                 </div>
                             </div>
-                        </div>
+                        </a>
                     </div>
                     <div class="flex mt-30">
-                        <div class="novetly-card mr-30">
+                        <a href="card-product.html" class="novetly-card mr-30">
                             <div class="novetly-card-content">
                                 <div class="novetly-card-image-wrapper">
                                     <img src="img/Cards/Card-image.jpg" alt="" class="novetly-card-image">
@@ -1211,8 +1301,8 @@
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="novetly-card mr-30">
+                        </a>
+                        <a href="card-product.html" class="novetly-card mr-30">
                             <div class="novetly-card-content">
                                 <div class="novetly-card-image-wrapper">
                                     <img src="img/Cards/Card-image.jpg" alt="" class="novetly-card-image">
@@ -1250,8 +1340,8 @@
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="novetly-card mr-30">
+                        </a>
+                        <a href="card-product.html" class="novetly-card mr-30">
                             <div class="novetly-card-content">
                                 <div class="novetly-card-image-wrapper">
                                     <img src="img/Cards/Card-image.jpg" alt="" class="novetly-card-image">
@@ -1289,8 +1379,8 @@
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="novetly-card">
+                        </a>
+                        <a href="card-product.html" class="novetly-card ipad-d-none">
                             <div class="novetly-card-content">
                                 <div class="novetly-card-image-wrapper">
                                     <img src="img/Cards/Card-image.jpg" alt="" class="novetly-card-image">
@@ -1328,13 +1418,13 @@
                                     </div>
                                 </div>
                             </div>
-                        </div>
+                        </a>
                     </div>
                 </div>
                 <div class="page-switcher">
                     <div class="page-switcher-content">
                         <a href="#" class="page-switcher-arrow-item page-switcher-border-radius-left">
-                            <img src="img/Smartphones/Arrow.png" alt="" class="page-switcher-arrow rotate-left">
+                            <img src="img/Collections/Arrow.png" alt="" class="page-switcher-arrow" style="transform: rotate(180deg);">
                         </a>
                         <div class="page-switcher-items-box">
                             <div class="page-switcher-item active">
@@ -1351,17 +1441,16 @@
                             </div>
                         </div>
                         <a href="#" class="page-switcher-arrow-item page-switcher-border-radius-right">
-                            <img src="img/Smartphones/Arrow.png" alt="" class="page-switcher-arrow rotate-right">
+                            <img src="img/Collections/Arrow.png" alt="" class="page-switcher-arrow">
                         </a>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
 
         <div class="mobile flex container mt-20">
             <div class="phone-cards">
-                <div class="phone-cards-start">
+                <div class="phone-cards-start" style="flex-direction: column;">
                     <div class="mobile-phone-cards-start-quantity-wrapper">
                         <div class="phone-cards-selector ml-150">
                             <div class="phone-cards-selector-front">
@@ -1418,7 +1507,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="phone-cards-start-quantity ml-22">
+                        <div class="phone-cards-start-quantity mt-5 ml-22">
                             Всего товаров в разделе: 
                             <span class="red"> 131</span>
                         </div>
@@ -1444,7 +1533,7 @@
                 </div>
                 <div class="phone-cards-content" style="margin-top: 26px; padding-top: 0;">
                     <div class="flex mobile-column">
-                        <div class="novetly-card">
+                        <a href="card-product.html" class="novetly-card">
                             <div class="novetly-card-content">
                                 <div class="novetly-card-image-wrapper">
                                     <img src="img/Cards/Card-image.jpg" alt="" class="novetly-card-image">
@@ -1482,8 +1571,8 @@
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="novetly-card mt-26">
+                        </a>
+                        <a href="card-product.html" class="novetly-card mt-26">
                             <div class="novetly-card-content">
                                 <div class="novetly-card-image-wrapper">
                                     <img src="img/Cards/Card-image.jpg" alt="" class="novetly-card-image">
@@ -1521,8 +1610,8 @@
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="novetly-card mt-26">
+                        </a>
+                        <a href="card-product.html" class="novetly-card mt-26">
                             <div class="novetly-card-content">
                                 <div class="novetly-card-image-wrapper">
                                     <img src="img/Cards/Card-image.jpg" alt="" class="novetly-card-image">
@@ -1560,8 +1649,8 @@
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="novetly-card mt-26">
+                        </a>
+                        <a href="card-product.html" class="novetly-card mt-26">
                             <div class="novetly-card-content">
                                 <div class="novetly-card-image-wrapper">
                                     <img src="img/Cards/Card-image.jpg" alt="" class="novetly-card-image">
@@ -1599,10 +1688,10 @@
                                     </div>
                                 </div>
                             </div>
-                        </div>
+                        </a>
                     </div>
                     <div class="flex mobile-column mt-26">
-                        <div class="novetly-card">
+                        <a href="card-product.html" class="novetly-card">
                             <div class="novetly-card-content">
                                 <div class="novetly-card-image-wrapper">
                                     <img src="img/Cards/Card-image.jpg" alt="" class="novetly-card-image">
@@ -1640,8 +1729,8 @@
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="novetly-card mt-26">
+                        </a>
+                        <a href="card-product.html" class="novetly-card mt-26">
                             <div class="novetly-card-content">
                                 <div class="novetly-card-image-wrapper">
                                     <img src="img/Cards/Card-image.jpg" alt="" class="novetly-card-image">
@@ -1679,8 +1768,8 @@
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="novetly-card mt-26">
+                        </a>
+                        <a href="card-product.html" class="novetly-card mt-26">
                             <div class="novetly-card-content">
                                 <div class="novetly-card-image-wrapper">
                                     <img src="img/Cards/Card-image.jpg" alt="" class="novetly-card-image">
@@ -1718,8 +1807,8 @@
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="novetly-card mt-26">
+                        </a>
+                        <a href="card-product.html" class="novetly-card mt-26">
                             <div class="novetly-card-content">
                                 <div class="novetly-card-image-wrapper">
                                     <img src="img/Cards/Card-image.jpg" alt="" class="novetly-card-image">
@@ -1757,10 +1846,10 @@
                                     </div>
                                 </div>
                             </div>
-                        </div>
+                        </a>
                     </div>
                     <div class="flex mobile-column mt-26">
-                        <div class="novetly-card">
+                        <a href="card-product.html" class="novetly-card">
                             <div class="novetly-card-content">
                                 <div class="novetly-card-image-wrapper">
                                     <img src="img/Cards/Card-image.jpg" alt="" class="novetly-card-image">
@@ -1798,8 +1887,8 @@
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="novetly-card mt-26">
+                        </a>
+                        <a href="card-product.html" class="novetly-card mt-26">
                             <div class="novetly-card-content">
                                 <div class="novetly-card-image-wrapper">
                                     <img src="img/Cards/Card-image.jpg" alt="" class="novetly-card-image">
@@ -1837,8 +1926,8 @@
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="novetly-card mt-26">
+                        </a>
+                        <a href="card-product.html" class="novetly-card mt-26">
                             <div class="novetly-card-content">
                                 <div class="novetly-card-image-wrapper">
                                     <img src="img/Cards/Card-image.jpg" alt="" class="novetly-card-image">
@@ -1876,8 +1965,8 @@
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="novetly-card mt-26">
+                        </a>
+                        <a href="card-product.html" class="novetly-card mt-26">
                             <div class="novetly-card-content">
                                 <div class="novetly-card-image-wrapper">
                                     <img src="img/Cards/Card-image.jpg" alt="" class="novetly-card-image">
@@ -1915,10 +2004,10 @@
                                     </div>
                                 </div>
                             </div>
-                        </div>
+                        </a>
                     </div>
                     <div class="flex mobile-column mt-26">
-                        <div class="novetly-card">
+                        <a href="card-product.html" class="novetly-card">
                             <div class="novetly-card-content">
                                 <div class="novetly-card-image-wrapper">
                                     <img src="img/Cards/Card-image.jpg" alt="" class="novetly-card-image">
@@ -1956,8 +2045,8 @@
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="novetly-card mt-26">
+                        </a>
+                        <a href="card-product.html" class="novetly-card mt-26">
                             <div class="novetly-card-content">
                                 <div class="novetly-card-image-wrapper">
                                     <img src="img/Cards/Card-image.jpg" alt="" class="novetly-card-image">
@@ -1995,8 +2084,8 @@
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="novetly-card mt-26">
+                        </a>
+                        <a href="card-product.html" class="novetly-card mt-26">
                             <div class="novetly-card-content">
                                 <div class="novetly-card-image-wrapper">
                                     <img src="img/Cards/Card-image.jpg" alt="" class="novetly-card-image">
@@ -2034,8 +2123,8 @@
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="novetly-card mt-26">
+                        </a>
+                        <a href="card-product.html" class="novetly-card mt-26">
                             <div class="novetly-card-content">
                                 <div class="novetly-card-image-wrapper">
                                     <img src="img/Cards/Card-image.jpg" alt="" class="novetly-card-image">
@@ -2073,10 +2162,10 @@
                                     </div>
                                 </div>
                             </div>
-                        </div>
+                        </a>
                     </div>
                     <div class="flex mobile-column mt-26">
-                        <div class="novetly-card">
+                        <a href="card-product.html" class="novetly-card">
                             <div class="novetly-card-content">
                                 <div class="novetly-card-image-wrapper">
                                     <img src="img/Cards/Card-image.jpg" alt="" class="novetly-card-image">
@@ -2114,8 +2203,8 @@
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="novetly-card mt-26">
+                        </a>
+                        <a href="card-product.html" class="novetly-card mt-26">
                             <div class="novetly-card-content">
                                 <div class="novetly-card-image-wrapper">
                                     <img src="img/Cards/Card-image.jpg" alt="" class="novetly-card-image">
@@ -2153,8 +2242,8 @@
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="novetly-card mt-26">
+                        </a>
+                        <a href="card-product.html" class="novetly-card mt-26">
                             <div class="novetly-card-content">
                                 <div class="novetly-card-image-wrapper">
                                     <img src="img/Cards/Card-image.jpg" alt="" class="novetly-card-image">
@@ -2192,8 +2281,8 @@
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="novetly-card mt-26">
+                        </a>
+                        <a href="card-product.html" class="novetly-card mt-26">
                             <div class="novetly-card-content">
                                 <div class="novetly-card-image-wrapper">
                                     <img src="img/Cards/Card-image.jpg" alt="" class="novetly-card-image">
@@ -2231,12 +2320,12 @@
                                     </div>
                                 </div>
                             </div>
-                        </div>
+                        </a>
                     </div>
                 <div class="page-switcher">
                     <div class="page-switcher-content">
                         <a href="#" class="page-switcher-arrow-item page-switcher-border-radius-left">
-                            <img src="img/Smartphones/Arrow.png" alt="" class="page-switcher-arrow rotate-left">
+                            <img src="img/Collections/Arrow.png" alt="" class="page-switcher-arrow" style="transform: rotate(180deg);">
                         </a>
                         <div class="page-switcher-items-box">
                             <div class="page-switcher-item active">
@@ -2253,83 +2342,115 @@
                             </div>
                         </div>
                         <a href="#" class="page-switcher-arrow-item page-switcher-border-radius-right">
-                            <img src="img/Smartphones/Arrow.png" alt="" class="page-switcher-arrow rotate-right">
+                            <img src="img/Collections/Arrow.png" alt="" class="page-switcher-arrow">
                         </a>
                     </div>
                 </div>
             </div>
         </div>
+        </div>
 
-    <div class="tips mt-230 container">
-        <div class="tips-content">
-            <div class="tips-item border-radius-left tips-1-padding">
-                <div class="tips-number fw-bold"> 01</div>
-                <div class="tips-heading fw-bold"> Оставте заявку на товар</div>
-                <div class="tips-text"> Выберите товар, добавьте в корзину и оставьте заявку</div>
-            </div>
-            <div class="tips-item white-bg tips-2-padding">
-                <div class="tips-number fw-bold"> 02</div>
-                <div class="tips-heading mt-17 fw-bold"> Наш оператор перезвонит</div>
-                <div class="tips-text"> Наш менеджер перезвонит Вам что бы уточнить детали доставки</div>
-            </div>
-            <div class="tips-item tips-3-padding">
-                <div class="tips-number fw-bold"> 03</div>
-                <div class="tips-heading mt-17 fw-bold"> Делаете оплату</div>
-                <div class="tips-text"> Менеджер отправит Вам счет и Вы оплачиваете товар</div>
-            </div>
-            <div class="tips-item white-bg border-radius-right tips-4-padding">
-                <div class="tips-number ml-0 fw-bold"> 04</div>
-                <div class="tips-heading ml-6 mt-17 fw-bold"> Мы отправляем</div>
-                <div class="tips-text ml-6"> Отправляем доставкой до вашего дома</div>
+        <div class="desktop-tablet-2 tips container">
+            <div class="tips-content">
+                <div class="tips-item border-radius-left tips-1-padding">
+                    <div class="tips-number fw-bold"> 01</div>
+                    <div class="tips-heading fw-bold"> Оставте заявку на товар</div>
+                    <div class="tips-text"> Выберите товар, добавьте в корзину и оставьте заявку</div>
+                </div>
+                <div class="tips-item white-bg tips-2-padding">
+                    <div class="tips-number fw-bold"> 02</div>
+                    <div class="tips-heading mt-17 fw-bold"> Наш оператор перезвонит</div>
+                    <div class="tips-text"> Наш менеджер перезвонит Вам что бы уточнить детали доставки</div>
+                </div>
+                <div class="tips-item tips-3-padding">
+                    <div class="tips-number fw-bold"> 03</div>
+                    <div class="tips-heading mt-17 fw-bold"> Делаете оплату</div>
+                    <div class="tips-text"> Менеджер отправит Вам счет и Вы оплачиваете товар</div>
+                </div>
+                <div class="tips-item white-bg border-radius-right tips-4-padding">
+                    <div class="tips-number ml-0 fw-bold"> 04</div>
+                    <div class="tips-heading ml-6 mt-17 fw-bold"> Мы отправляем</div>
+                    <div class="tips-text ml-6"> Отправляем доставкой до вашего дома</div>
+                </div>
             </div>
         </div>
-    </div>
-
-    <footer class="footer mt-230">
-        <div class="footer-content container">
-            <div class="footer-logo-and-social-media">
-                <div class="footer-logo-wrapper">
-                    <a href="index.html"><img src="img/Navbar/Logo.png" alt="" class="footer-company-logo"></a>
-                </div>
-                <div class="social-media">
-                    <img src="img/Foooter/Telegram.png" alt="" class="footer-logo">
-                    <img src="img/Foooter/Facebook.png" alt="" class="footer-logo">
-                    <img src="img/Foooter/Instagram.png" alt="" class="footer-logo mr-0">
-                </div>
-            </div>
-            <div class="footer-nav">
-                <ul class="footer-list-1">
-                    <li class="footer-nav-item"><a href="#" class="footer-nav-link"> Смартфоны</a></li>
-                    <li class="footer-nav-item"><a href="#" class="footer-nav-link"> Ноутбуки</a></li>
-                    <li class="footer-nav-item mb-0"><a href="#" class="footer-nav-link"> Планшеты</a></li>
-                </ul>
-                <ul class="footer-list-2">
-                    <li class="footer-nav-item"><a href="#" class="footer-nav-link"> Акции</a></li>
-                    <li class="footer-nav-item"><a href="#" class="footer-nav-link"> Информация о доставке</a></li>
-                    <li class="footer-nav-item mb-0"><a href="#" class="footer-nav-link"> Поддержка и гарантии</a></li>
-                </ul>
-            </div>
-            <div class="footer-column">
-                <div class="footer-number-wrapper">
-                    <div class="footer-phone-logo-wrapper">
-                        <img src="img/Navbar/Phone.png" alt="" class="footer-phone-logo">
+    
+        <div class="tablet tips container">
+            <div class="tips-content">
+                <div class="flex">
+                    <div class="tips-item border-radius-left tips-1-padding" style="margin-right: 10px; margin-bottom: 10px;">
+                        <div class="tips-number fw-bold"> 01</div>
+                        <div class="tips-heading fw-bold"> Оставте заявку на товар</div>
+                        <div class="tips-text"> Выберите товар, добавьте в корзину и оставьте заявку</div>
                     </div>
-                    <div class="footer-phone-texts">
-                        <div class="footer-phone-time"> 09:00 - 20:00</div>
-                        <div class="footer-phone-number fz-15"> +998 (00) 000-00-00</div>
+                    <div class="tips-item white-bg tips-2-padding">
+                        <div class="tips-number fw-bold"> 02</div>
+                        <div class="tips-heading mt-17 fw-bold"> Наш оператор перезвонит</div>
+                        <div class="tips-text"> Наш менеджер перезвонит Вам что бы уточнить детали доставки</div>
                     </div>
                 </div>
-                <div class="footer-link-wrapper">
-                    <a href="#" class="link footer-number-link-padding d-block">
-                        <span class="z-2"> Заказать звонок</span>
-                    </a>
+                <div class="flex">
+                    <div class="tips-item tips-3-padding" style="margin-right: 10px;">
+                        <div class="tips-number fw-bold"> 03</div>
+                        <div class="tips-heading mt-17 fw-bold"> Делаете оплату</div>
+                        <div class="tips-text"> Менеджер отправит Вам счет и Вы оплачиваете товар</div>
+                    </div>
+                    <div class="tips-item white-bg border-radius-right tips-4-padding">
+                        <div class="tips-number ml-0 fw-bold"> 04</div>
+                        <div class="tips-heading ml-6 mt-17 fw-bold"> Мы отправляем</div>
+                        <div class="tips-text ml-6"> Отправляем доставкой до вашего дома</div>
+                    </div>
                 </div>
             </div>
         </div>
-        <div class="all-rights-reserved mini-extended-container">
-            <div class="all-rights-reserved-text"> 3nuqta © 2020. Все права защищены</div>
-        </div>
-    </footer>
+    
+        <footer class="footer">
+            <div class="footer-content container">
+                <div class="footer-logo-and-social-media">
+                    <div class="footer-logo-wrapper">
+                        <a href="index.html"><img src="img/Navbar/Logo.png" alt="" class="footer-company-logo"></a>
+                    </div>
+                    <div class="social-media">
+                        <a href="#"><img src="img/Foooter/Telegram.png" alt="" class="footer-logo"></a>
+                        <a href="#"><img src="img/Foooter/Facebook.png" alt="" class="footer-logo"></a>
+                        <a href="#"><img src="img/Foooter/Instagram.png" style="transform: rotate(-90deg);" alt="" class="footer-logo mr-0"></a>
+                    </div>
+                </div>
+                <div class="footer-nav">
+                    <ul class="footer-list-1">
+                        <li class="footer-nav-item"><a href="#" class="footer-nav-link"> Смартфоны</a></li>
+                        <li class="footer-nav-item"><a href="#" class="footer-nav-link"> Ноутбуки</a></li>
+                        <li class="footer-nav-item mb-0"><a href="#" class="footer-nav-link"> Планшеты</a></li>
+                    </ul>
+                    <ul class="footer-list-2">
+                        <li class="footer-nav-item"><a href="#" class="footer-nav-link"> Акции</a></li>
+                        <li class="footer-nav-item"><a href="#" class="footer-nav-link"> Информация о доставке</a></li>
+                        <li class="footer-nav-item mb-0"><a href="#" class="footer-nav-link"> Поддержка и гарантии</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <div class="footer-number-wrapper">
+                        <div class="footer-phone-logo-wrapper">
+                            <a href="tel: +998 (90) 000 00 00"><img src="img/Navbar/Phone.png" alt="" class="footer-phone-logo"></a>
+                        </div>
+                        <div class="footer-phone-texts">
+                            <div class="footer-phone-time"> 09:00 - 20:00</div>
+                            <div class="footer-phone-number fz-15"> +998 (00) 000-00-00</div>
+                        </div>
+                    </div>
+                    <div class="footer-link-wrapper">
+                        <a href="tel: +998 (90) 000 00 00" class="link footer-number-link-padding d-block">
+                            <span class="z-2"> Заказать звонок</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="all-rights-reserved mini-extended-container">
+                <div class="all-rights-reserved-text"> 3nuqta © 2020. Все права защищены</div>
+            </div>
+        </footer>
+
+
 
 
 

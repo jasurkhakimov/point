@@ -7,6 +7,7 @@
 
     <!-- Css -->
     <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/swiper-bundle.css">
 
     <!-- User Css -->
     <link rel="stylesheet" href="css/style.css">
@@ -31,12 +32,12 @@
                 </form>
                 <div class="number-wrapper">
                     <div class="phone-logo-wrapper">
-                        <img src="img/Navbar/Phone.png" alt="" class="phone-logo">
+                        <a href="tel: +998 (90) 000 00 00"><img src="img/Navbar/Phone.png" alt="" class="phone-logo"></a>
                     </div>
                     <div class="phone-texts">
                         <div class="phone-time"> 09:00 - 20:00</div>
                         <div class="phone-number fz-15"> +998 (00) 000-00-00</div>
-                        <a href="#" class="phone-link"> Заказать звонок</a>
+                        <a href="tel: +998 (90) 000 00 00" class="phone-link"> Заказать звонок</a>
                     </div>
                 </div>
                 <div class="language-switcher">
@@ -336,7 +337,7 @@
                         <li class="sn-item">
                             <a href="shares.html" class="sn-link p-19"> Акции</a>
                         </li>
-                        <li class="sn-item">
+                        <li class="sn-item active">
                             <a href="delivery-info.html" class="sn-link p-19"> Информация о доставке</a>
                         </li>
                         <li class="sn-item br-none">
@@ -397,7 +398,7 @@
                                     <img src="img/Navbar/Burger.png" alt="" class="mobile-burger">
                                 </div>
                                 <div class="mobile-phone-wrapper">
-                                    <img src="img/Navbar/Phone.png" alt="" class="phone-logo">
+                                    <a href="tel: +998 (90) 000 00 00"><img src="img/Navbar/Phone.png" alt="" class="phone-logo"></a>
                                 </div>
                                 <a href="bag-page.html" class="mobile-bag-wrapper d-block">
                                     <div>
@@ -416,8 +417,12 @@
                         <form action="">
                             <div class="mobile-search-wrapper">
                                 <div class="mobile-search-item">
-                                    <input type="text" class="mobile-search-input" placeholder="Поиск по каталогу">
-                                    <img src="img/Navbar/Filter.png" alt="" class="mobile-search-filter">
+                                    <div>
+                                        <input type="text" class="mobile-search-input" placeholder="Поиск по каталогу">
+                                    </div>
+                                    <div class="mobile-search-filter-wrapper">
+                                        <img src="img/Navbar/Filter.png" alt="" class="mobile-search-filter">
+                                    </div>
                                 </div>
                                 <button type="submit" class="mobile-search-button-item">
                                     <img src="img/Navbar/Mobile-search-icon.png" alt="" class="mobile-search-button">
@@ -429,18 +434,18 @@
             </nav>
         </div>
     
-        <div class="mobile">
-            <div class="mobile-navbar-links">
-                <ul class="mobile-navbar-list">
-                    <li class="mobile-navbar-list-item"><a href="smartphones.html" class="mobile-navbar-list-link"> Смартфоны</a></li>
-                    <li class="mobile-navbar-list-item"><a href="#" class="mobile-navbar-list-link"> Ноутбуки</a></li>
-                    <li class="mobile-navbar-list-item"><a href="#" class="mobile-navbar-list-link"> Планшеты</a></li>
-                    <li class="mobile-navbar-list-item"><a href="shares.html" class="mobile-navbar-list-link"> Акции</a></li>
-                    <li class="mobile-navbar-list-item"><a href="delivery-info.html" class="mobile-navbar-list-link"> Информация о доставке</a></li>
-                    <li class="mobile-navbar-list-item"><a href="support-guarantee.html" class="mobile-navbar-list-link"> Поддержка и гарантии</a></li>
-                </ul>
+            <div class="mobile">
+                <div class="mobile-navbar-links">
+                    <ul class="mobile-navbar-list">
+                        <li class="mobile-navbar-list-item"><a href="smartphones.html" class="mobile-navbar-list-link"> Смартфоны</a></li>
+                        <li class="mobile-navbar-list-item"><a href="#" class="mobile-navbar-list-link"> Ноутбуки</a></li>
+                        <li class="mobile-navbar-list-item"><a href="#" class="mobile-navbar-list-link"> Планшеты</a></li>
+                        <li class="mobile-navbar-list-item"><a href="shares.html" class="mobile-navbar-list-link"> Акции</a></li>
+                        <li class="mobile-navbar-list-item"><a href="delivery-info.html" class="mobile-navbar-list-link"> Информация о доставке</a></li>
+                        <li class="mobile-navbar-list-item"><a href="support-guarantee.html" class="mobile-navbar-list-link"> Поддержка и гарантии</a></li>
+                    </ul>
+                </div>
             </div>
-        </div>
         
             <div class="breadcrumber container">
                 <div class="flex">
@@ -468,9 +473,8 @@
                     </div>
                 </div>
             </div>
-        </div>
     
-        <div class="tips mt-0 container">
+        <div class="desktop-tablet-2 tips mt-0 container">
             <div class="tips-content">
                 <div class="tips-item border-radius-left tips-1-padding">
                     <div class="tips-number fw-bold"> 01</div>
@@ -494,6 +498,34 @@
                 </div>
             </div>
         </div>
+        <div class="tablet tips container">
+            <div class="tips-content">
+                <div class="flex">
+                    <div class="tips-item border-radius-left tips-1-padding" style="margin-right: 10px; margin-bottom: 10px;">
+                        <div class="tips-number fw-bold"> 01</div>
+                        <div class="tips-heading fw-bold"> Оставте заявку на товар</div>
+                        <div class="tips-text"> Выберите товар, добавьте в корзину и оставьте заявку</div>
+                    </div>
+                    <div class="tips-item white-bg tips-2-padding">
+                        <div class="tips-number fw-bold"> 02</div>
+                        <div class="tips-heading mt-17 fw-bold"> Наш оператор перезвонит</div>
+                        <div class="tips-text"> Наш менеджер перезвонит Вам что бы уточнить детали доставки</div>
+                    </div>
+                </div>
+                <div class="flex">
+                    <div class="tips-item tips-3-padding" style="margin-right: 10px;">
+                        <div class="tips-number fw-bold"> 03</div>
+                        <div class="tips-heading mt-17 fw-bold"> Делаете оплату</div>
+                        <div class="tips-text"> Менеджер отправит Вам счет и Вы оплачиваете товар</div>
+                    </div>
+                    <div class="tips-item white-bg border-radius-right tips-4-padding">
+                        <div class="tips-number ml-0 fw-bold"> 04</div>
+                        <div class="tips-heading ml-6 mt-17 fw-bold"> Мы отправляем</div>
+                        <div class="tips-text ml-6"> Отправляем доставкой до вашего дома</div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 
     <footer class="footer mt-0">
@@ -503,9 +535,9 @@
                     <a href="index.html"><img src="img/Navbar/Logo.png" alt="" class="footer-company-logo"></a>
                 </div>
                 <div class="social-media">
-                    <img src="img/Foooter/Telegram.png" alt="" class="footer-logo">
-                    <img src="img/Foooter/Facebook.png" alt="" class="footer-logo">
-                    <img src="img/Foooter/Instagram.png" alt="" class="footer-logo mr-0">
+                    <a href="#"><img src="img/Foooter/Telegram.png" alt="" class="footer-logo"></a>
+                    <a href="#"><img src="img/Foooter/Facebook.png" alt="" class="footer-logo"></a>
+                    <a href="#"><img src="img/Foooter/Instagram.png" style="transform: rotate(-90deg);" alt="" class="footer-logo mr-0"></a>
                 </div>
             </div>
             <div class="footer-nav">
@@ -523,7 +555,7 @@
             <div class="footer-column">
                 <div class="footer-number-wrapper">
                     <div class="footer-phone-logo-wrapper">
-                        <img src="img/Navbar/Phone.png" alt="" class="footer-phone-logo">
+                        <a href="tel: +998 (90) 000 00 00"><img src="img/Navbar/Phone.png" alt="" class="footer-phone-logo"></a>
                     </div>
                     <div class="footer-phone-texts">
                         <div class="footer-phone-time"> 09:00 - 20:00</div>
@@ -531,7 +563,7 @@
                     </div>
                 </div>
                 <div class="footer-link-wrapper">
-                    <a href="#" class="link footer-number-link-padding d-block">
+                    <a href="tel: +998 (90) 000 00 00" class="link footer-number-link-padding d-block">
                         <span class="z-2"> Заказать звонок</span>
                     </a>
                 </div>
