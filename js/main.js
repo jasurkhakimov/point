@@ -371,31 +371,29 @@ $(document).ready(function () {
         })
     }
 
-    $('.product-lower-form-quantity-counter-prev-wrapper').click(function(e){
+    $('.product-lower-form-quantity-counter-prev-wrapper').click(function (e) {
         let input = $(this).siblings('input');
         let value = parseInt(input.val());
         console.log(value);
-        if (value > 0)
-        {
+        if (value > 0) {
             value -= 1;
             $(this).siblings('input').val(value);
             $(this).siblings('#product-lower-form-quantity-number-wrapper').text(value);
         }
-    }); 
+    });
 
-    $('.product-lower-form-quantity-counter-next-wrapper').click(function(e){
+    $('.product-lower-form-quantity-counter-next-wrapper').click(function (e) {
         let input = $(this).siblings('input');
         let value = parseInt(input.val());
         console.log(value);
-        
-        if (value >= 0)
-        {
+
+        if (value >= 0) {
             value += 1;
             $(this).siblings('input').val(value);
             $(this).siblings('#product-lower-form-quantity-number-wrapper').text(value);
 
         }
-    }); 
+    });
 
 
 });
