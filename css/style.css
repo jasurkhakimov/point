@@ -1352,7 +1352,6 @@ ul {
         background: var(--background);
         background-image: url(../img/Website-background/Wave.png);
         background-repeat: no-repeat;
-        background-size: contain;
     }
 }
 
