@@ -231,7 +231,7 @@ $(document).ready(function () {
     });
 
     $(".smartphones-item-producer").click(function () {
-        $(".smartphones-filter-dropdown-producer").toggleClass("active");
+        $(".smartphones-filter-dropdown-producer").slideToggle();
     });
     $(".smartphones-filter-dropdown-producer-image-item").click(function () {
         $(".smartphones-filter-dropdown-producer-image-item").removeClass("active");
@@ -239,11 +239,11 @@ $(document).ready(function () {
     });
 
     $(".smartphones-item-model").click(function () {
-        $(".smartphones-filter-dropdown-model").toggleClass("active");
+        $(".smartphones-filter-dropdown-model").slideToggle();
     });
 
     $(".smartphones-item-price").click(function () {
-        $(".smartphones-filter-dropdown-price").toggleClass("active");
+        $(".smartphones-filter-dropdown-price").slideToggle();
     });
 
     // Novetlies Tabs
@@ -393,6 +393,24 @@ $(document).ready(function () {
             $(this).siblings('#product-lower-form-quantity-number-wrapper').text(value);
 
         }
+    });
+
+    $('.search-filter-wrapper, .mobile-search-filter-wrapper').click(function(e) {
+        e.preventDefault();
+        $('.modal-back-overlay').addClass('active');
+        $('.search-filter-modal').addClass('active');
+    });
+    
+    $('.link, .phone-link').click(function() {
+        $('.modal-back-overlay').addClass('active');
+        $('.callback-modal').addClass('active');
+    });
+
+    $('.close, .modal-back-overlay').click(function(){
+        $('.modal-back-overlay').removeClass('active');
+        $('.search-filter-modal').removeClass('active');
+        $('.callback-modal').removeClass('active');
+
     });
 
 
