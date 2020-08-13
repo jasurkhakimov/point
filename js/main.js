@@ -256,39 +256,76 @@ $(document).ready(function () {
     // Product Card
 
     $(".product-images-dot-first").click(function () {
+        $(".product-lower-form-color-item-image").removeClass("active");
         $(".product-images-dot-second, .product-images-dot-third, .product-images-dot-fourth, .product-images-dot-fifth").removeClass("active");
         $(".product-images-dot-first").addClass("active");
-        $(".product-images-switcher-main-second, .product-images-switcher-main-third, .product-images-switcher-main-fourth, .product-images-switcher-main-fifth").removeClass("active")
+        $(".product-images-switcher-main-six, .product-images-switcher-main-second, .product-images-switcher-main-third, .product-images-switcher-main-fourth, .product-images-switcher-main-fifth").removeClass("active")
         $(".product-images-switcher-main-first").addClass("active");
     });
 
     $(".product-images-dot-second").click(function () {
+        $(".product-lower-form-color-item-image").removeClass("active");
         $(".product-images-dot-first, .product-images-dot-third, .product-images-dot-fourth, .product-images-dot-fifth").removeClass("active");
         $(".product-images-dot-second").addClass("active");
-        $(".product-images-switcher-main-first, .product-images-switcher-main-third, .product-images-switcher-main-fourth, .product-images-switcher-main-fifth").removeClass("active")
+        $(".product-images-switcher-main-six, .product-images-switcher-main-first, .product-images-switcher-main-third, .product-images-switcher-main-fourth, .product-images-switcher-main-fifth").removeClass("active")
         $(".product-images-switcher-main-second").addClass("active");
     });
 
     $(".product-images-dot-third").click(function () {
+        $(".product-lower-form-color-item-image").removeClass("active");
         $(".product-images-dot-first, .product-images-dot-second, .product-images-dot-fourth, .product-images-dot-fifth").removeClass("active");
         $(".product-images-dot-third").addClass("active");
-        $(".product-images-switcher-main-first, .product-images-switcher-main-second, .product-images-switcher-main-fourth, .product-images-switcher-main-fifth").removeClass("active")
+        $(".product-images-switcher-main-six, .product-images-switcher-main-first, .product-images-switcher-main-second, .product-images-switcher-main-fourth, .product-images-switcher-main-fifth").removeClass("active")
         $(".product-images-switcher-main-third").addClass("active");
     });
 
     $(".product-images-dot-fourth").click(function () {
+        $(".product-lower-form-color-item-image").removeClass("active");
         $(".product-images-dot-first, .product-images-dot-second, .product-images-dot-third, .product-images-dot-fifth").removeClass("active");
         $(".product-images-dot-fourth").addClass("active");
-        $(".product-images-switcher-main-first, .product-images-switcher-main-second, .product-images-switcher-main-third, .product-images-switcher-main-fifth").removeClass("active")
+        $(".product-images-switcher-main-six, .product-images-switcher-main-first, .product-images-switcher-main-second, .product-images-switcher-main-third, .product-images-switcher-main-fifth").removeClass("active")
         $(".product-images-switcher-main-fourth").addClass("active");
     });
 
     $(".product-images-dot-fifth").click(function () {
+        $(".product-lower-form-color-item-image").removeClass("active");
         $(".product-images-dot-first, .product-images-dot-second, .product-images-dot-third, .product-images-dot-fourth").removeClass("active");
         $(".product-images-dot-fifth").addClass("active");
-        $(".product-images-switcher-main-first, .product-images-switcher-main-second, .product-images-switcher-main-third, .product-images-switcher-main-fourth").removeClass("active")
+        $(".product-images-switcher-main-six, .product-images-switcher-main-first, .product-images-switcher-main-second, .product-images-switcher-main-third, .product-images-switcher-main-fourth").removeClass("active")
         $(".product-images-switcher-main-fifth").addClass("active");
     });
+
+    // Color pick
+
+    $(".product-lower-form-color-list-item-1").click(function () {
+        $(".product-images-dot-first, .product-images-dot-second, .product-images-dot-third, .product-images-dot-fourth, .product-images-dot-fifth").removeClass("active");
+        $(".product-images-switcher-main-first, .product-images-switcher-main-second, .product-images-switcher-main-third, .product-images-switcher-main-fourth, .product-images-switcher-main-fifth").removeClass("active");
+        $(".product-images-switcher-main-six").addClass("active");
+    })
+
+    $(".product-lower-form-color-list-item-2").click(function () {
+        $(".product-images-dot-first, .product-images-dot-second, .product-images-dot-third, .product-images-dot-fourth, .product-images-dot-fifth").removeClass("active");
+        $(".product-images-switcher-main-six, .product-images-switcher-main-first, .product-images-switcher-main-third, .product-images-switcher-main-fourth, .product-images-switcher-main-fifth").removeClass("active");
+        $(".product-images-switcher-main-second").addClass("active");
+    })
+
+    $(".product-lower-form-color-list-item-3").click(function () {
+        $(".product-images-dot-first, .product-images-dot-second, .product-images-dot-third, .product-images-dot-fourth, .product-images-dot-fifth").removeClass("active");
+        $(".product-images-switcher-main-six, .product-images-switcher-main-first, .product-images-switcher-main-second, .product-images-switcher-main-fourth, .product-images-switcher-main-fifth").removeClass("active");
+        $(".product-images-switcher-main-third").addClass("active");
+    })
+
+    $(".product-lower-form-color-list-item-4").click(function () {
+        $(".product-images-dot-first, .product-images-dot-second, .product-images-dot-third, .product-images-dot-fourth, .product-images-dot-fifth").removeClass("active");
+        $(".product-images-switcher-main-six, .product-images-switcher-main-first, .product-images-switcher-main-second, .product-images-switcher-main-third, .product-images-switcher-main-fifth").removeClass("active");
+        $(".product-images-switcher-main-fourth").addClass("active");
+    })
+
+    $(".product-lower-form-color-list-item-5").click(function () {
+        $(".product-images-dot-first, .product-images-dot-second, .product-images-dot-third, .product-images-dot-fourth, .product-images-dot-fifth").removeClass("active");
+        $(".product-images-switcher-main-six, .product-images-switcher-main-first, .product-images-switcher-main-second, .product-images-switcher-main-third, .product-images-switcher-main-fourth").removeClass("active");
+        $(".product-images-switcher-main-fifth").addClass("active");
+    })
 
     // Model pick
 

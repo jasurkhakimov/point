@@ -2643,7 +2643,7 @@ ul {
     border-radius: 5px;
 }
 
-.product-images-switcher-main-first.active, .product-images-switcher-main-second.active, .product-images-switcher-main-third.active, .product-images-switcher-main-fourth.active, .product-images-switcher-main-fifth.active {
+.product-images-switcher-main-first.active, .product-images-switcher-main-second.active, .product-images-switcher-main-third.active, .product-images-switcher-main-fourth.active, .product-images-switcher-main-fifth.active, .product-images-switcher-main-six.active {
     display: block;
 }
 
